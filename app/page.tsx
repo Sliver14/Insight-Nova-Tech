@@ -5,8 +5,17 @@ import Image from "next/image";
 import ProjectCard from "../components/projectCard";
 import { getFeaturedProjects } from "../lib/projects";
 import Header from "@/components/header";
-import { ArrowUpRight } from "lucide-react";
 import WhatWeDo from "../components/whatWeDo"
+import Footer from "@/components/footer";
+import {
+  Cpu,
+  PencilRuler,
+  Sparkles,
+  TrendingUp,
+  RefreshCcw,
+  ArrowUpRight,
+} from "lucide-react";
+
 
 export default function HomePage() {
   const featuredProjects = getFeaturedProjects();
@@ -64,12 +73,46 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex flex-col flex-1 justify-center items-start px-20">
-              <h1 className="text-left">Drawing on decades of expertise, Utility builds new products with innovative client partners.</h1>
-              <button className="flex items-center gap-2">
-                View all services 
+              {/* Headline */}
+              <h1 className="text-2xl lg:text-3xl xl:text-4xl text-left font-medium text-white leading-tight max-w-2xl mb-14">
+                We build innovative digital products with forward-thinking partners.
+              </h1>
+
+              {/* Services */}
+              <div className="grid grid-cols-2 gap-x-20 gap-y-6 mb-14">
+                <div className="flex items-center gap-4 text-neutral-400">
+                  <Cpu className="w-5 h-5" />
+                  <span>Tech Development</span>
+                </div>
+
+                <div className="flex items-center gap-4 text-neutral-400">
+                  <PencilRuler className="w-5 h-5" />
+                  <span>Product Design</span>
+                </div>
+
+                <div className="flex items-center gap-4 text-neutral-400">
+                  <Sparkles className="w-5 h-5" />
+                  <span>AI Solutions</span>
+                </div>
+
+                <div className="flex items-center gap-4 text-neutral-400">
+                  <TrendingUp className="w-5 h-5" />
+                  <span>Growth Marketing</span>
+                </div>
+
+                <div className="flex items-center gap-4 text-neutral-400">
+                  <RefreshCcw className="w-5 h-5" />
+                  <span>Digital Transformation</span>
+                </div>
+              </div>
+
+              {/* CTA */}
+              <button className="group flex items-center gap-2 text-neutral-400 hover:text-white transition-colors">
+                View all services
                 <ArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
               </button>
             </div>
+
           </div>
 
           {/* Trusted By / Partner Logos Section */}
@@ -120,25 +163,100 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="text-center mt-16">
-            <Link
-              href="/our-work"
-              className="flex items-center w-[180px]
-                text-[#4D4DFF] font-semibold text-lg
-                border-b-2 border-[#4D4DFF]
-                hover:text-[#FF4D4D] hover:border-[#FF4D4D]
-                transition duration-300
-              "
-            >
-              View More Work 
-              <ArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
-            </Link>
-          </div>
         </div>
       </section>
 
       {/* NEW: What We Do / Methodologies Section */}
       <WhatWeDo />
+      
+      {/* AboutUsSection */}
+      <section className="relative bg-white py-24 md:py-32 overflow-hidden">
+      {/* Subtle curved background overlay */}
+      <div className="absolute inset-0 opacity-30">
+        <Image
+          src="/hero-background-gradient2.png"
+          alt="Subtle curved lines background"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-2 items-center gap-12 md:gap-20">
+          {/* Left: Image with rounded right curve */}
+          <div className="relative">
+            <div className="aspect-square md:aspect-auto md:h-full overflow-hidden rounded-l-full md:rounded-l-none">
+              <Image
+                src="https://media.istockphoto.com/id/1372067104/photo/studio-shot-of-a-young-businessman-cheering-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=CpLEYyzUVIggz_EARHPd2nrL9MJeBAR8v4a85C7KLXM="
+                alt="Excited professional celebrating success"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          </div>
+
+          {/* Right: Text Content */}
+          <div className="space-y-12">
+            <p className="text-lg text-gray-500">About Us</p>
+
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
+              We look for interesting challenges that move people forward.
+            </h2>
+
+            <div className="flex flex-col sm:flex-row gap-6">
+              <Link
+                href="/careers"
+                className="group inline-flex items-center justify-center gap-3 bg-black text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition duration-300"
+              >
+                Careers
+                <ArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+              </Link>
+
+              <Link
+                href="/about"
+                className="group inline-flex items-center gap-3 text-gray-700 font-medium hover:text-gray-900 transition duration-300"
+              >
+                About us
+                <ArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ContactCTASection */}
+    <section className="relative bg-gray-100 py-32 md:py-48 overflow-hidden">
+      {/* Subtle abstract background */}
+      {/* <Image
+        src="https://www.shutterstock.com/image-illustration/abstract-white-grey-background-subtle-260nw-2467796823.jpg"
+        alt="Subtle abstract background"
+        fill
+        className="object-cover opacity-50"
+        priority
+      /> */}
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p className="text-2xl md:text-3xl text-gray-600 mb-6">Let's talk</p>
+
+        <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-12 leading-tight">
+          We'd love to hear about your project
+        </h2>
+
+        <Link
+          href="/start-project"
+          className="group inline-flex items-center justify-center gap-3 bg-black text-white px-10 py-5 rounded-full text-lg font-medium hover:bg-gray-800 transition duration-300"
+        >
+          Start your project
+          <ArrowUpRight className="w-6 h-6 transition-transform duration-300 group-hover:translate-x-2 group-hover:-translate-y-2" />
+        </Link>
+      </div>
+    </section>
+
+    {/* Footer */}
+    <Footer/>
     </main>
   );
 }

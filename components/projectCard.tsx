@@ -40,16 +40,16 @@ const ProjectCard = ({ project, isFeatured = false }) => {
         </p>
 
         <button
-          onClick={() => router.push(`/our-work/${slug}`)}
+          onClick={() => router.push("/our-work")}
           className="
             inline-flex items-center gap-3 w-fit
-            bg-gray-200 text-gray-800
+            bg-gray-200 text-gray-800 cursor-pointer
             px-8 py-4 rounded-full font-semibold
             transition-all duration-300
             hover:bg-gray-300
           "
         >
-          View Project
+          View all
           <ArrowUpRight
             className="
               w-5 h-5
@@ -61,39 +61,49 @@ const ProjectCard = ({ project, isFeatured = false }) => {
       </div>
 
       {/* IMAGE SECTION */}
-      <div className="relative w-full h-64 md:h-full">
-        <Image
-          src={imageSrc}
-          alt={title}
-          fill
-          priority={isFeatured}
-          className="z-20
-          hover:rounded-bl-[240px]
-            object-cover
-           
+      <div className="relative w-full h-64 md:h-full overflow-hidden">
+        {/* Image wrapper */}
+        <div
+          onClick={() => router.push(`/our-work/${slug}`)}
+          className="
+            group/image
+            absolute inset-0
+            transition-all duration-500 ease-out
+            hover:rounded-bl-[240px]
+            cursor-pointer
           "
-        />
+        >
+          <Image
+            src={imageSrc}
+            alt={title}
+            fill
+            priority={isFeatured}
+            className="object-cover"
+          />
+        </div>
+
+        {/* Hover-reveal button */}
         <button
           onClick={() => router.push(`/our-work/${slug}`)}
-          className=" absolute bottom-0 left-0 z-10
-            inline-flex items-center gap-3 w-fit
+          className="
+            absolute bottom-6 left-6 z-30
+            inline-flex items-center gap-3
             bg-gray-200 text-gray-800
-            px-8 py-4 rounded-full font-semibold
+            px-5 py-5 rounded-full font-semibold
             transition-all duration-300
+            opacity-0 translate-y-4 cursor-pointer
+            group-hover:opacity-100 group-hover:translate-y-0
             hover:bg-gray-300
           "
         >
-          <ArrowUpRight
-            className="
-              w-5 h-5
-              transition-transform duration-300
-              group-hover:translate-x-1 group-hover:-translate-y-1
-            "
-          />
+          {/* View project */}
+          <ArrowUpRight className="w-5 h-5" />
         </button>
-        {/* Mobile overlay */}
-        <div className="absolute inset-0 bg-linear-to-t from-black/30 to-transparent md:hidden" />
+
+        {/* Mobile gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent md:hidden pointer-events-none" />
       </div>
+
     </article>
   );
 };
