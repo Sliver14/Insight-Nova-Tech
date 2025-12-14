@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "73c32f298246f0cf8dba86cbc1940025",
-    "previewModeSigningKey": "665f357698ad3f57c1db2a707cfad0ba4a4a132228526c5e039c08d830cf1e5f",
-    "previewModeEncryptionKey": "eda16405c7a3e12d74f71a377e1fb53b228b3eec9f00cc880d153910b8b78263"
-  }
-}
+{"version":4,"routes":{"/our-work/ascent-property-manager":{},"/our-work/educatelink-platform":{}},"dynamicRoutes":{"/our-work/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/our-work/[slug]","routeRegex":"^\\/our\\-work\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"b71c94dd902a1c1eb845b63955a0a842","previewModeSigningKey":"f029a3d8e570f6b0a02fef5489de858059bf7790430aa691e1601dd9bbad81d7","previewModeEncryptionKey":"f1783f21a47d4921b804ae7c4bba66a03087ff2f30d0b86bd30882a1a3c0b0e3"}}

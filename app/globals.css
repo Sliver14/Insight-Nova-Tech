@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #0a0e27;
+  --background: #ffffff;
   --foreground: #f5f5f5;
   --card: #1a1f3a;
   --card-foreground: #f5f5f5;
@@ -116,4 +116,22 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* Optional: Pause on hover (nice UX) */
+.animate-marquee:hover {
+  animation-play-state: paused;
 }
