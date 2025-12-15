@@ -25,128 +25,115 @@ export default function HomePage() {
       <Header />
 
       {/* 1. Hero Section */}
-      <section className="relative flex flex-col w-full pt-36 md:pt-48 text-center gap-20 bg-black/98">
-          {/* PNG Texture Overlay */}
-          <Image
-              src="/hero-background-gradient.png"
-              alt="Background texture"
-              fill
-              priority
-              className="object-contain mix-blend-screen pointer-events-none select-none opacity-100"
-            />
-          
+      {/* 1. Hero Section */}
+      <section className="relative w-full pt-24 md:pt-32 lg:pt-48 pb-16 md:pb-24 bg-black/98 overflow-hidden">
+        {/* PNG Texture Overlay */}
+        <Image
+          src="/hero-background-gradient.png"
+          alt="Background texture"
+          fill
+          priority
+          className="object-contain mix-blend-screen pointer-events-none select-none opacity-100"
+        />
 
-          {/* Hero Content */}
-          <div className="flex w-full">
-            <div className="relative px-20 z-10 max-w-3xl">  {/* Limits width and centers the block */}
-              <h1 className="text-6xl md:text-7xl font-extrabold text-white mb-6 leading-tight text-left">
-                Web and Mobile Application
-              </h1>
+        {/* Hero Headline & Description */}
+        <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center lg:text-left">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
+            Web and Mobile Application
+          </h1>
 
-              <p className="text-xl text-white/50 mb-10 text-left">
-                A modern tech agency specializing in high-performance
-                applications, enterprise platforms, and transformative digital
-                experiences.
-              </p>
-            </div>
-          </div>
-          
+          <p className="text-lg sm:text-xl text-white/50 max-w-3xl mx-auto lg:mx-0">
+            A modern tech agency specializing in high-performance applications, enterprise platforms, and transformative digital experiences.
+          </p>
+        </div>
 
-          {/* CTA WITH VIDEO */}
-          <div className="flex w-full h-auto px-12 gap-20">
-            <div className="relative w-full h-[520px] flex flex-1">
+        {/* Video + Services Section */}
+        <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 mt-20 lg:mt-32">
+          <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
+            {/* Left: Video */}
+            <div className="relative w-full lg:w-1/2 h-[400px] sm:h-[500px] lg:h-[600px] flex-shrink-0">
               <video
                 autoPlay
                 muted
                 loop
                 playsInline
-                className="absolute inset-0 w-full h-full object-cover rounded-br-[150px] opacity-50"
+                className="absolute inset-0 w-full h-full object-cover rounded-br-[100px] sm:rounded-br-[150px] opacity-50"
               >
                 <source src="/5c76ce4998ac6bcff7b7f60d_67e1e08d1c69ff97c254a4c9_Preview-U-Crop-Updated-optmized-transcode.mp4" type="video/mp4" />
-                {/* Fallback for browsers that don't support video */}
                 <div className="absolute inset-0 bg-black/60" />
               </video>
-              <div className="absolute top-0 left-0 bg-black z-20  w-52 h-62">
-                <button className="text-white bg-neutral-600 px-3 w-auto py-3 rounded-full hover:text-white/90">
+
+              {/* Work with us button overlay */}
+              <div className="absolute top-8 left-8 z-20">
+                <button className="bg-neutral-600 text-white px-6 py-4 rounded-full font-medium hover:bg-neutral-500 transition">
                   Work with us
                 </button>
               </div>
             </div>
-            <div className="flex flex-col flex-1 justify-center items-start px-20">
-              {/* Headline */}
-              <h1 className="text-2xl lg:text-3xl xl:text-4xl text-left font-medium text-white leading-tight max-w-2xl mb-14">
+
+            {/* Right: Text & Services */}
+            <div className="w-full lg:w-1/2 flex flex-col justify-center">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium text-white leading-tight mb-10 lg:mb-14 text-center lg:text-left">
                 We build innovative digital products with forward-thinking partners.
-              </h1>
+              </h2>
 
-              {/* Services */}
-              <div className="grid grid-cols-2 gap-x-20 gap-y-6 mb-14">
+              {/* Services Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 lg:gap-x-20 gap-y-8 mb-12">
                 <div className="flex items-center gap-4 text-neutral-400">
-                  <Cpu className="w-5 h-5" />
-                  <span>Tech Development</span>
+                  <Cpu className="w-6 h-6 flex-shrink-0" />
+                  <span className="text-lg">Tech Development</span>
                 </div>
 
                 <div className="flex items-center gap-4 text-neutral-400">
-                  <PencilRuler className="w-5 h-5" />
-                  <span>Product Design</span>
+                  <PencilRuler className="w-6 h-6 flex-shrink-0" />
+                  <span className="text-lg">Product Design</span>
                 </div>
 
                 <div className="flex items-center gap-4 text-neutral-400">
-                  <Sparkles className="w-5 h-5" />
-                  <span>AI Solutions</span>
+                  <Sparkles className="w-6 h-6 flex-shrink-0" />
+                  <span className="text-lg">AI Solutions</span>
                 </div>
 
                 <div className="flex items-center gap-4 text-neutral-400">
-                  <TrendingUp className="w-5 h-5" />
-                  <span>Growth Marketing</span>
+                  <TrendingUp className="w-6 h-6 flex-shrink-0" />
+                  <span className="text-lg">Growth Marketing</span>
                 </div>
 
                 <div className="flex items-center gap-4 text-neutral-400">
-                  <RefreshCcw className="w-5 h-5" />
-                  <span>Digital Transformation</span>
+                  <RefreshCcw className="w-6 h-6 flex-shrink-0" />
+                  <span className="text-lg">Digital Transformation</span>
                 </div>
               </div>
 
-              {/* CTA */}
-              <button className="group flex items-center gap-2 text-neutral-400 hover:text-white transition-colors">
+              {/* View all services CTA */}
+              <button className="group mx-auto lg:mx-0 flex items-center gap-3 text-neutral-400 hover:text-white transition-colors">
                 View all services
                 <ArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
               </button>
             </div>
-
           </div>
+        </div>
 
-          {/* Trusted By / Partner Logos Section */}
-          <section className="py-16 md:pt-24 overflow-hidden">
-            <div className=" mx-auto px-12 sm:px-6 lg:px-8">
+        {/* Trusted By / Partner Logos Section */}
+        <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 mt-20 lg:mt-32">
+          <div className="overflow-hidden">
+            <div className="flex items-center gap-12 sm:gap-16 md:gap-24 animate-marquee md:animate-none whitespace-nowrap">
+              {/* First set */}
+              <Image src="/brands logo/67608fbae911f6aaf6dd24ca_Logo Samsung.svg" alt="Samsung" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
+              <Image src="/brands logo/67608fe5dab4348d94ee6cc9_Coca-Cola Brand.svg" alt="Coca-Cola" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
+              <Image src="/brands logo/67608ff410d975107897344c_Brand Verizon.svg" alt="Verizon" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
+              <Image src="/brands logo/676090109234d980622102dd_Brand DirecTV.svg" alt="DirecTV" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
+              <Image src="/brands logo/6760902d036c8f0efdfa14b7_Warner Music Group.svg" alt="Warner Music Group" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
 
-              {/* Marquee Container */}
-              <div className="relative">
-                {/* Overflow hidden for clean edges */}
-                <div className="overflow-hidden">
-                  <div className="
-                    flex items-center gap-16 md:gap-24
-                    animate-marquee md:animate-none  /* Scroll only on mobile/small screens */
-                    whitespace-nowrap
-                  ">
-                    {/* First set of logos */}
-                    <Image src="/brands logo/67608fbae911f6aaf6dd24ca_Logo Samsung.svg" alt="Client 1" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
-                    <Image src="/brands logo/67608fe5dab4348d94ee6cc9_Coca-Cola Brand.svg" alt="Client 2" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
-                    <Image src="/brands logo/67608ff410d975107897344c_Brand Verizon.svg" alt="Client 3" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
-                    <Image src="/brands logo/676090109234d980622102dd_Brand DirecTV.svg" alt="Client 4" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
-                    <Image src="/brands logo/6760902d036c8f0efdfa14b7_Warner Music Group.svg" alt="Client 5" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
-
-                    {/* Duplicate set for seamless infinite loop */}
-                    <Image src="/brands logo/67608fbae911f6aaf6dd24ca_Logo Samsung.svg" alt="Client 1" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
-                    <Image src="/brands logo/67608fe5dab4348d94ee6cc9_Coca-Cola Brand.svg" alt="Client 2" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
-                    <Image src="/brands logo/67608ff410d975107897344c_Brand Verizon.svg" alt="Client 3" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
-                    <Image src="/brands logo/676090109234d980622102dd_Brand DirecTV.svg" alt="Client 4" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
-                    <Image src="/brands logo/6760902d036c8f0efdfa14b7_Warner Music Group.svg" alt="Client 5" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
-                  </div>
-                </div>
-              </div>
+              {/* Duplicate set for seamless loop */}
+              <Image src="/brands logo/67608fbae911f6aaf6dd24ca_Logo Samsung.svg" alt="Samsung" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
+              <Image src="/brands logo/67608fe5dab4348d94ee6cc9_Coca-Cola Brand.svg" alt="Coca-Cola" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
+              <Image src="/brands logo/67608ff410d975107897344c_Brand Verizon.svg" alt="Verizon" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
+              <Image src="/brands logo/676090109234d980622102dd_Brand DirecTV.svg" alt="DirecTV" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
+              <Image src="/brands logo/6760902d036c8f0efdfa14b7_Warner Music Group.svg" alt="Warner Music Group" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
             </div>
-          </section>
-          
+          </div>
+        </div>
       </section>
 
       {/* 2. Top Featured Projects */}

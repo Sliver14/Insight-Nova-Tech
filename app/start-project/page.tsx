@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Header from '@/components/header';
 
 const projectTypes = ['Web App', 'Website', 'Mobile App', 'Branding', 'Automation', 'Other'];
 const budgetRanges = [
@@ -34,6 +35,7 @@ export default function StartProjectPage() {
 
   return (
     <main className="max-w-4xl mx-auto py-16 px-4">
+      <Header/>
       <h1 className="text-5xl font-extrabold text-[#1A1A1A] mb-4 text-center">Tell Us About Your Vision</h1>
       <p className="text-xl text-[#666666] mb-12 text-center">
         Fill out the form below and we'll be in touch within 24 hours to bring your project to life.
