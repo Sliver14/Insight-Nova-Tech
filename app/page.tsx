@@ -7,6 +7,7 @@ import { getFeaturedProjects } from "../lib/projects";
 import Header from "@/components/header";
 import WhatWeDo from "../components/whatWeDo"
 import Footer from "@/components/footer";
+import ContactCTASection from "../components/contactCTASection"
 import {
   Cpu,
   PencilRuler,
@@ -25,8 +26,7 @@ export default function HomePage() {
       <Header />
 
       {/* 1. Hero Section */}
-      {/* 1. Hero Section */}
-      <section className="relative w-full pt-24 md:pt-32 lg:pt-48 pb-16 md:pb-24 bg-black/98 overflow-hidden">
+      <section id="hero" className="relative w-full pt-24 md:pt-32 lg:pt-48 pb-16 md:pb-24 bg-black/98 overflow-hidden">
         {/* PNG Texture Overlay */}
         <Image
           src="/hero-background-gradient.png"
@@ -37,9 +37,9 @@ export default function HomePage() {
         />
 
         {/* Hero Headline & Description */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 text-center lg:text-left">
+        <div className="relative z-10 max-w-5xl px-6 sm:px-8 lg:px-12 text-start lg:text-left">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
-            Web and Mobile Application
+            Custom Web & Mobile Software Solutions
           </h1>
 
           <p className="text-lg sm:text-xl text-white/50 max-w-3xl mx-auto lg:mx-0">
@@ -73,7 +73,7 @@ export default function HomePage() {
 
             {/* Right: Text & Services */}
             <div className="w-full lg:w-1/2 flex flex-col justify-center">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium text-white leading-tight mb-10 lg:mb-14 text-center lg:text-left">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium text-white leading-tight mb-10 lg:mb-14 text-start lg:text-left">
                 We build innovative digital products with forward-thinking partners.
               </h2>
 
@@ -106,7 +106,7 @@ export default function HomePage() {
               </div>
 
               {/* View all services CTA */}
-              <button className="group mx-auto lg:mx-0 flex items-center gap-3 text-neutral-400 hover:text-white transition-colors">
+              <button className="group mx-auto w-full lg:mx-0 flex items-start text-start gap-3 text-neutral-400 hover:text-white transition-colors">
                 View all services
                 <ArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
               </button>
@@ -215,32 +215,8 @@ export default function HomePage() {
     </section>
 
     {/* ContactCTASection */}
-    <section className="relative bg-gray-100 py-32 md:py-48 overflow-hidden">
-      {/* Subtle abstract background */}
-      {/* <Image
-        src="https://www.shutterstock.com/image-illustration/abstract-white-grey-background-subtle-260nw-2467796823.jpg"
-        alt="Subtle abstract background"
-        fill
-        className="object-cover opacity-50"
-        priority
-      /> */}
+    <ContactCTASection />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p className="text-2xl md:text-3xl text-gray-600 mb-6">Let's talk</p>
-
-        <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-12 leading-tight">
-          We'd love to hear about your project
-        </h2>
-
-        <Link
-          href="/start-project"
-          className="group inline-flex items-center justify-center gap-3 bg-black text-white px-10 py-5 rounded-full text-lg font-medium hover:bg-gray-800 transition duration-300"
-        >
-          Start your project
-          <ArrowUpRight className="w-6 h-6 transition-transform duration-300 group-hover:translate-x-2 group-hover:-translate-y-2" />
-        </Link>
-      </div>
-    </section>
 
     {/* Footer */}
     <Footer/>

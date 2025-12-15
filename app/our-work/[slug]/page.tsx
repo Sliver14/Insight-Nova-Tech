@@ -1,6 +1,9 @@
 import { getProjectBySlug } from '@/lib/projects';
 import Link from 'next/link';
 import Image from 'next/image';
+import ContactCTASection from '@/components/contactCTASection';
+import Footer from '@/components/footer';
+import Header from '@/components/header';
 
 // Function to generate static params for Next.js
 export async function generateStaticParams() {
@@ -19,7 +22,9 @@ export default async function ProjectDetailPage({ params }) {
   if (!project) return <div>Project Not Found</div>;
 
   return (
-    <main className="max-w-7xl mx-auto px-4 py-16">
+    <>
+    <Header/>
+    <main className="max-w-7xl mx-auto mt-24 px-4 py-16">
       {/* Hero/Overview */}
       <p className="text-[#4D4DFF] font-semibold uppercase tracking-widest mb-2">Category: {project.category}</p>
       <h1 className="text-5xl md:text-6xl font-extrabold text-[#1A1A1A] mb-8">{project.title}</h1>
@@ -69,18 +74,11 @@ export default async function ProjectDetailPage({ params }) {
             ))}
          </div>
       </div>
-
-      {/* CTA: Start a Project */}
-      <div className="mt-20 text-center border-t pt-10">
-        <h3 className="text-3xl font-bold text-[#1A1A1A] mb-6">Ready to build your next breakthrough?</h3>
-        <Link
-          href="/start-project"
-          className="bg-[#FF4D4D] text-white text-lg font-bold py-4 px-12 rounded-full 
-                     hover:bg-opacity-90 transition duration-300 shadow-xl"
-        >
-          Start a Project
-        </Link>
-      </div>
     </main>
+    {/* CTA: Start a Project */}
+      <ContactCTASection/>
+
+      <Footer/>
+      </>
   );
 }
