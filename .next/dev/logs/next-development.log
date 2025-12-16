@@ -25,3 +25,213 @@
 [00:22:50.945] Server  LOG      ✓ Compiled in 370ms
 [00:25:53.796] Server  LOG      ✓ Compiled in 241ms
 [00:26:49.963] Server  LOG      ✓ Compiled in 225ms
+[09:04:59.511] Server  LOG      ✓ Compiled in 234ms
+[09:10:34.869] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[09:10:35.189] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[09:10:35.189] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[09:10:35.189] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765877156518}
+[09:10:35.189] Browser WARN    Image with src "https://media.istockphoto.com/id/1372067104/photo/studio-shot-of-a-young-businessman-cheering-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=CpLEYyzUVIggz_EARHPd2nrL9MJeBAR8v4a85C7KLXM=" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[09:12:24.468] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[09:12:24.827] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[09:12:24.828] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[09:12:24.828] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765877266147}
+[09:12:24.828] Browser WARN    Image with src "https://media.istockphoto.com/id/1372067104/photo/studio-shot-of-a-young-businessman-cheering-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=CpLEYyzUVIggz_EARHPd2nrL9MJeBAR8v4a85C7KLXM=" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[09:14:04.262] Server  LOG      ✓ Compiled in 217ms
+[09:14:34.391] Server  LOG      ✓ Compiled in 204ms
+[09:14:42.231] Server  LOG      ✓ Compiled in 225ms
+[13:02:23.538] Server  LOG      ✓ Compiled in 239ms
+[13:03:07.699] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[13:03:07.699] Browser ERROR   Image is missing required "src" property: <img>
+[13:03:07.699] Browser ERROR   Image is missing required "src" property: <img>
+[13:03:07.699] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work/nexuschat color: rgb(120, 120, 120) color: inherit {"dp":"/our-work/[slug]","o":"http://localhost:3000/our-work/nexuschat","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765891109021}
+[13:03:22.548] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765891123853}
+[13:06:09.313] Server  LOG      ✓ Compiled in 223ms
+[13:06:25.192] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765891306519}
+[13:06:31.318] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work/creative-emmy color: rgb(120, 120, 120) color: inherit {"dp":"/our-work/[slug]","o":"http://localhost:3000/our-work/creative-emmy","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765891312641}
+[13:07:35.950] Server  LOG      ✓ Compiled in 262ms
+[13:07:44.254] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765891385573}
+[13:08:00.889] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work/reno-app color: rgb(120, 120, 120) color: inherit {"dp":"/our-work/[slug]","o":"http://localhost:3000/our-work/reno-app","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765891402209}
+[13:08:20.009] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765891421333}
+[13:10:00.999] Server  LOG      ✓ Compiled in 340ms
+[13:52:06.940] Server  LOG      ✓ Compiled in 506ms
+[14:49:30.214] Server  LOG      ✓ Compiled in 244ms
+[14:49:57.839] Server  LOG      ✓ Compiled in 292ms
+[14:50:54.725] Server  LOG      ✓ Compiled in 341ms
+[14:50:55.015] Browser ERROR   ./components/projectCard.tsx:79:9
+Parsing ecmascript source code failed
+  77 |                   </span>
+  78 |         </button>
+> 79 |       </div>
+     |         ^^^
+  80 |
+  81 |       {/* IMAGE SECTION */}
+  82 |       <div className="relative w-full h-64 md:h-full overflow-hidden">
+
+Expected corresponding JSX closing tag for <article>
+
+Import traces:
+  Client Component Browser:
+    ./components/projectCard.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/projectCard.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[14:53:31.236] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765897732564}
+[14:54:04.027] Server  LOG      ✓ Compiled in 229ms
+[14:54:26.517] Server  LOG      ✓ Compiled in 255ms
+[14:55:53.097] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[14:55:53.301] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[14:55:53.301] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/our-work","route":"/our-work"}
+[14:55:53.301] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765897874626}
+[14:55:53.599] Browser WARN    Image with src "https://picsum.photos/seed/klimars-gym-1/800/600" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[15:04:01.021] Server  LOG      ✓ Compiled in 265ms
+[15:08:52.119] Server  LOG      ✓ Compiled in 269ms
+[15:08:53.021] Browser WARN    Image with src "https://picsum.photos/seed/reno-crypto-1/800/600" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[15:08:53.021] Browser WARN    Image with src "https://picsum.photos/seed/nexuschat-1/800/600" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[15:08:53.021] Browser WARN    Image with src "https://picsum.photos/seed/insight-bot-1/800/600" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[15:08:53.021] Browser WARN    Image with src "https://picsum.photos/seed/bloomty-marketplace-1/800/600" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[15:08:53.021] Browser WARN    Image with src "https://picsum.photos/seed/omnia-pms-1/800/600" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[15:08:53.021] Browser WARN    Image with src "https://picsum.photos/seed/klimars-gym-1/800/600" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[15:08:53.021] Browser WARN    Image with src "https://picsum.photos/seed/lampsiheirs-1/800/600" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[15:08:53.021] Browser WARN    Image with src "https://picsum.photos/seed/efemena-construction-1/800/600" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[15:08:53.021] Browser WARN    Image with src "https://picsum.photos/seed/creative-emmy-1/800/600" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[15:08:53.021] Browser WARN    Image with src "https://picsum.photos/seed/school-ems-1/800/600" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[15:08:53.021] Browser WARN    Image with src "https://picsum.photos/seed/doi-creative-1/800/600" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[15:09:12.969] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765898674285}
+[15:09:12.969] Browser WARN    Image with src "https://media.istockphoto.com/id/1372067104/photo/studio-shot-of-a-young-businessman-cheering-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=CpLEYyzUVIggz_EARHPd2nrL9MJeBAR8v4a85C7KLXM=" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[15:11:49.161] Server  LOG      ✓ Compiled in 273ms
+[15:13:22.236] Server  LOG      ✓ Compiled in 338ms
+[15:13:51.178] Server  LOG      ✓ Compiled in 258ms
+[15:14:05.337] Server  LOG      ✓ Compiled in 339ms
+[15:14:31.037] Server  LOG      ✓ Compiled in 240ms
+[15:18:13.238] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765899214562}
+[15:19:09.921] Server  LOG      ✓ Compiled in 145ms
+[15:19:23.787] Server  LOG      ✓ Compiled in 169ms
+[15:20:57.458] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work/nexuschat color: rgb(120, 120, 120) color: inherit {"dp":"/our-work/[slug]","o":"http://localhost:3000/our-work/nexuschat","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765899378784}
+[15:22:11.176] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765899452504}
+[15:22:54.392] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work/nexuschat color: rgb(120, 120, 120) color: inherit {"dp":"/our-work/[slug]","o":"http://localhost:3000/our-work/nexuschat","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765899495724}
+[15:22:56.861] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765899498188}
+[15:23:47.036] Server  LOG      ✓ Compiled in 182ms
+[15:24:02.672] Server  LOG      ✓ Compiled in 211ms
+[15:24:20.536] Server  LOG      ✓ Compiled in 160ms
+[15:25:23.736] Server  LOG      ✓ Compiled in 174ms
+[15:25:46.545] Server  LOG      ✓ Compiled in 182ms
+[15:26:07.538] Server  LOG      ✓ Compiled in 139ms
+[15:26:18.681] Server  LOG      ✓ Compiled in 182ms
+[15:27:10.740] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765899752070}
+[15:28:50.423] Server  LOG      ✓ Compiled in 237ms
+[15:29:59.504] Server  LOG      ✓ Compiled in 231ms
+[15:30:17.385] Server  LOG      ✓ Compiled in 261ms
+[15:30:58.290] Server  LOG      ✓ Compiled in 231ms
+[15:31:48.570] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work/reno-app color: rgb(120, 120, 120) color: inherit {"dp":"/our-work/[slug]","o":"http://localhost:3000/our-work/reno-app","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765900029895}
+[15:32:05.751] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765900047077}
+[15:33:53.544] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765900154866}
+[15:34:18.219] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765900179546}
+[15:43:07.808] Server  LOG      ✓ Compiled in 416ms
+[15:43:47.177] Server  LOG      ✓ Compiled in 472ms
+[15:44:02.371] Server  LOG      ✓ Compiled in 364ms
+[15:44:08.345] Server  LOG      ✓ Compiled in 316ms
+[15:44:39.328] Server  LOG      ✓ Compiled in 417ms
+[15:45:40.715] Server  LOG      ✓ Compiled in 393ms
+[15:45:41.012] Browser ERROR   uncaughtError: ReferenceError: project is not defined
+[15:46:14.497] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[15:46:14.839] Server  ERROR   C:\Users\dell\Desktop\Sylver\CODE PROJECTS\Nextjs Projects\Insight Nova Tech\.next\dev\server\chunks\ssr\_6435b801._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[15:46:14.841] Server  ERROR    ⨯ TypeError: Cannot destructure property 'title' of 'project' as it is undefined.
+[15:46:14.865] Server  LOG      ✓ Compiled in 377ms
+[15:46:15.108] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[15:46:15.811] Browser ERROR   uncaughtError: TypeError: Cannot destructure property 'title' of 'project' as it is undefined.
+[15:46:18.034] Server  ERROR   C:\Users\dell\Desktop\Sylver\CODE PROJECTS\Nextjs Projects\Insight Nova Tech\.next\dev\server\chunks\ssr\_6435b801._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[15:46:18.035] Server  ERROR    ⨯ TypeError: Cannot destructure property 'title' of 'project' as it is undefined.
+[15:46:18.176] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[15:46:18.365] Browser ERROR   uncaughtError: TypeError: Cannot destructure property 'title' of 'project' as it is undefined.
+[15:46:42.829] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[15:46:43.133] Server  LOG      ✓ Compiled in 333ms
+[15:46:43.432] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[15:46:44.012] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[15:46:44.012] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[15:46:44.012] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765900925003}
+[15:46:44.012] Browser WARN    Image with src "https://media.istockphoto.com/id/1372067104/photo/studio-shot-of-a-young-businessman-cheering-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=CpLEYyzUVIggz_EARHPd2nrL9MJeBAR8v4a85C7KLXM=" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[15:47:21.482] Server  LOG      ✓ Compiled in 285ms
+[15:47:44.795] Server  LOG      ✓ Compiled in 504ms
+[18:25:37.215] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765910448334}
+[18:25:44.329] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[18:25:44.532] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[18:25:44.532] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/our-work","route":"/our-work"}
+[18:25:44.532] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765910455659}
+[18:25:58.831] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[18:26:13.194] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[18:26:13.194] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/our-work","route":"/our-work"}
+[18:26:13.194] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765910484319}
+[18:30:51.584] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[18:30:51.759] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[18:30:51.759] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/our-work","route":"/our-work"}
+[18:30:51.759] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765910762884}
+[18:30:58.497] Browser WARN    Image with src "https://picsum.photos/seed/reno-crypto-1/800/600" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[18:31:20.398] Browser WARN    Image with src "https://picsum.photos/seed/nexuschat-1/800/600" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[18:32:17.421] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765910848534}
+[18:32:17.422] Browser WARN    Image with src "https://media.istockphoto.com/id/1372067104/photo/studio-shot-of-a-young-businessman-cheering-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=CpLEYyzUVIggz_EARHPd2nrL9MJeBAR8v4a85C7KLXM=" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[18:37:39.227] Server  LOG      ✓ Compiled in 257ms
+[18:37:43.605] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[18:37:43.830] Browser WARN    Image with src "https://media.istockphoto.com/id/1372067104/photo/studio-shot-of-a-young-businessman-cheering-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=CpLEYyzUVIggz_EARHPd2nrL9MJeBAR8v4a85C7KLXM=" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[18:37:43.830] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[18:37:43.830] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[18:37:43.830] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765911174957}
+[18:37:59.226] Server  LOG      ✓ Compiled in 261ms
+[18:38:31.676] Server  LOG      ✓ Compiled in 240ms
+[18:39:24.873] Server  LOG      ✓ Compiled in 218ms
+[18:39:36.929] Server  LOG      ✓ Compiled in 345ms
+[19:05:22.957] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765912833895}
+[19:05:28.553] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765912839679}
+[19:05:31.694] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765912842723}
+[19:05:35.928] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765912847050}
+[19:06:17.634] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765912888688}
+[19:07:04.922] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/start-project color: rgb(120, 120, 120) color: inherit {"dp":"/start-project","o":"http://localhost:3000/start-project","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765912936046}
+[19:07:16.692] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765912947814}
+[19:07:58.611] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work/school-education-management-system color: rgb(120, 120, 120) color: inherit {"dp":"/our-work/[slug]","o":"http://localhost:3000/our-work/school-education-management-system","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765912989731}
+[19:08:14.809] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765913005936}
+[19:08:39.351] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765913030475}
+[19:08:39.351] Browser WARN    Image with src "http://localhost:3000/Futuristic%20side%20view%20portrait%20of%20young%20african-american%20woman%20wearing%20vr%20headset%20against%20purple%20background%20_%20Premium%20Photo.jpeg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[19:10:41.426] Server  LOG      ✓ Compiled in 471ms
+[19:11:30.346] Server  LOG      ✓ Compiled in 447ms
+[19:12:17.401] Server  LOG      ✓ Compiled in 382ms
+[19:16:23.313] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[19:16:23.537] Browser WARN    Image with src "https://media.istockphoto.com/id/1372067104/photo/studio-shot-of-a-young-businessman-cheering-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=CpLEYyzUVIggz_EARHPd2nrL9MJeBAR8v4a85C7KLXM=" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[19:16:23.537] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[19:16:23.537] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[19:16:23.537] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765913494666}
+[19:21:31.270] Server  LOG      ✓ Compiled in 426ms
+[19:21:32.017] Browser ERROR   uncaughtError: TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$projects$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__.getFeaturedProjects.filter is not a function
+[19:21:43.554] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[19:21:43.636] Server  LOG      ✓ Compiled in 344ms
+[19:21:43.994] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[19:21:45.014] Browser WARN    Image with src "https://media.istockphoto.com/id/1372067104/photo/studio-shot-of-a-young-businessman-cheering-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=CpLEYyzUVIggz_EARHPd2nrL9MJeBAR8v4a85C7KLXM=" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[19:21:45.014] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[19:21:45.014] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[19:21:45.014] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765913815393}
+[19:24:39.693] Server  LOG      ✓ Compiled in 501ms
+[19:26:27.718] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765914098843}
+[19:28:04.978] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765914196008}
+[19:28:07.424] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765914198545}
+[19:29:43.071] Server  LOG      ✓ Compiled in 343ms
+[19:30:16.822] Server  LOG      ✓ Compiled in 293ms
+[19:30:45.374] Server  LOG      ✓ Compiled in 327ms
+[19:33:04.069] Server  LOG      ✓ Compiled in 368ms
+[19:34:26.588] Server  LOG      ✓ Compiled in 384ms
+[19:34:38.507] Server  LOG      ✓ Compiled in 321ms
+[19:34:47.553] Server  LOG      ✓ Compiled in 330ms
+[19:35:10.182] Server  LOG      ✓ Compiled in 286ms
+[19:35:25.075] Server  LOG      ✓ Compiled in 317ms
+[19:36:03.201] Server  LOG      ✓ Compiled in 310ms
+[19:36:19.216] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765914690334}
+[19:36:45.819] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765914716932}
+[19:36:45.819] Browser WARN    Image with src "http://localhost:3000/Futuristic%20side%20view%20portrait%20of%20young%20african-american%20woman%20wearing%20vr%20headset%20against%20purple%20background%20_%20Premium%20Photo.jpeg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[19:37:15.162] Server  LOG      ✓ Compiled in 323ms
+[19:38:17.575] Server  LOG      ✓ Compiled in 491ms
+[19:40:46.005] Server  LOG      ✓ Compiled in 491ms
+[19:41:26.466] Server  LOG      ✓ Compiled in 554ms

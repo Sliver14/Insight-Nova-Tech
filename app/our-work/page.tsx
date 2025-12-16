@@ -27,7 +27,7 @@ export default function OurWorkPage() {
 
         {/* Masonry-style Project Grid */}
         <section className="flex mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col gap-8 space-y-8">
+          <div className="flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-4 gap-8 space-y-8">
             {projects.map((project) => (
               <div key={project.slug} className="break-inside-avoid">
                 <ProjectCard project={project} variant="editorial" />

@@ -104,11 +104,35 @@ const Header = () => {
             {/* CTA - responsive visibility */}
             <Link
               href="/start-project"
-              className="hidden sm:inline-flex items-center gap-2 text-base md:text-md font-medium hover:gap-3 transition-all duration-300"
+              className="hidden group relative sm:inline-flex items-center gap-2 text-base md:text-md font-medium"
               onClick={() => setMobileMenuOpen(false)}
             >
               Start a project
-              <ArrowUpRight className="w-5 h-5 transition-transform duration-300" />
+                          {/* Arrow container */}
+            <span className="relative w-5 h-5 overflow-hidden">
+              
+              {/* Default arrow */}
+              <ArrowUpRight
+                className="
+                  absolute inset-0
+                  transition-all duration-300 ease-out
+                  group-hover:translate-x-2 group-hover:-translate-y-2
+                  group-hover:opacity-0
+                "
+              />
+
+              {/* Hover arrow */}
+              <ArrowUpRight
+                className="
+                  absolute inset-0
+                  translate-x-[-0.75rem] translate-y-[0.75rem]
+                  opacity-0
+                  transition-all duration-300 ease-out
+                  group-hover:translate-x-0 group-hover:translate-y-0
+                  group-hover:opacity-100
+                "
+              />
+            </span>
             </Link>
 
             {/* Hamburger → X */}

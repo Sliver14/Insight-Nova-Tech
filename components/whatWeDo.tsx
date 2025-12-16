@@ -152,10 +152,10 @@ export default function WhatWeDoSection() {
         </div>
 
         {/* RIGHT: Service Button + Dynamic Image */}
-        <div className="flex-1 relative flex flex-col w-full lg:justify-center lg:items-center">
+        {/* <div className="flex-1 relative flex flex-col w-full h-full lg:justify-center lg:items-center"> */}
 
           <div className="
-            relative
+            relative flex flex-1 lg:justify-center lg:items-center
             w-full
             h-72 sm:h-96 md:h-[450px] lg:h-[500px]
             lg:max-w-lg
@@ -177,7 +177,7 @@ export default function WhatWeDoSection() {
             Services →
           </Link> */}
         </div>
-      </div>
+      {/* </div> */}
     </section>
   );
 }

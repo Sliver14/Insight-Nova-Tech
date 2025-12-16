@@ -187,21 +187,62 @@ export default function HomePage() {
       </section>
 
       {/* 2. Top Featured Projects */}
-      <section className="py-20 md:py-28 bg-gray-50">
-        <div className=" mx-auto px-4 sm:px-6 lg:px-8">
-
-          <div className="flex flex-col gap-30">
-            {featuredProjects.map((project) => (
+      <section className="py-20 md:py-28">
+        <div className="mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-12 gap-8">
+            {featuredProjects.map((project, index) => (
               <ProjectCard
                 key={project.slug}
                 project={project}
+                index={index}
                 isFeatured={true}
               />
             ))}
           </div>
-
         </div>
+        <div className="flex w-full justify-center pt-20">
+          <button
+            onClick={() => router.push("/our-work")}
+            className="
+              group relative overflow-hidden
+              flex items-center gap-3
+              bg-black text-white
+              px-6 py-4 rounded-full font-medium
+              hover:bg-neutral-600 transition
+            "
+          >
+            <span>View all projects</span>
+
+            {/* Arrow container */}
+            <span className="relative w-5 h-5 overflow-hidden">
+              
+              {/* Default arrow */}
+              <ArrowUpRight
+                className="
+                  absolute inset-0
+                  transition-all duration-300 ease-out
+                  group-hover:translate-x-2 group-hover:-translate-y-2
+                  group-hover:opacity-0
+                "
+              />
+
+              {/* Hover arrow */}
+              <ArrowUpRight
+                className="
+                  absolute inset-0
+                  translate-x-[-0.75rem] translate-y-[0.75rem]
+                  opacity-0
+                  transition-all duration-300 ease-out
+                  group-hover:translate-x-0 group-hover:translate-y-0
+                  group-hover:opacity-100
+                "
+              />
+            </span>
+          </button> 
+        </div>
+          
       </section>
+
 
       {/* NEW: What We Do / Methodologies Section */}
       <WhatWeDo />
