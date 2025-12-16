@@ -99,10 +99,10 @@
     --color-neutral-400: #a1a1a1;
     --color-neutral-500: #737373;
     --color-neutral-600: #525252;
-    --color-neutral-700: #404040;
     --color-black: #000;
     --color-white: #fff;
     --spacing: .25rem;
+    --container-lg: 32rem;
     --container-xl: 36rem;
     --container-2xl: 42rem;
     --container-3xl: 48rem;
@@ -166,7 +166,6 @@
       --color-neutral-400: lab(66.128% -.0000298023 .0000119209);
       --color-neutral-500: lab(48.496% 0 0);
       --color-neutral-600: lab(34.924% 0 0);
-      --color-neutral-700: lab(27.036% 0 0);
     }
   }
 }
@@ -484,10 +483,6 @@
     top: calc(var(--spacing) * 4);
   }
 
-  .top-6 {
-    top: calc(var(--spacing) * 6);
-  }
-
   .top-8 {
     top: calc(var(--spacing) * 8);
   }
@@ -692,6 +687,10 @@
 
   .h-64 {
     height: calc(var(--spacing) * 64);
+  }
+
+  .h-72 {
+    height: calc(var(--spacing) * 72);
   }
 
   .h-96 {
@@ -935,6 +934,10 @@
     justify-content: center;
   }
 
+  .justify-start {
+    justify-content: flex-start;
+  }
+
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -1149,16 +1152,6 @@
 
   .bg-neutral-600 {
     background-color: var(--color-neutral-600);
-  }
-
-  .bg-neutral-700\/90 {
-    background-color: #404040e6;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .bg-neutral-700\/90 {
-      background-color: color-mix(in oklab, var(--color-neutral-700) 90%, transparent);
-    }
   }
 
   .bg-transparent {
@@ -1537,10 +1530,6 @@
     opacity: .4;
   }
 
-  .opacity-50 {
-    opacity: .5;
-  }
-
   .opacity-60 {
     opacity: .6;
   }
@@ -1576,12 +1565,6 @@
   .grayscale {
     --tw-grayscale: grayscale(100%);
     filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
-  }
-
-  .backdrop-blur {
-    --tw-backdrop-blur: blur(8px);
-    -webkit-backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
-    backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
   }
 
   .backdrop-blur-md {
@@ -1741,12 +1724,6 @@
   }
 
   @media (hover: hover) {
-    .hover\:bg-neutral-600:hover {
-      background-color: var(--color-neutral-600);
-    }
-  }
-
-  @media (hover: hover) {
     .hover\:bg-white\/10:hover {
       background-color: #ffffff1a;
     }
@@ -1824,6 +1801,12 @@
   @media (min-width: 40rem) {
     .sm\:h-6 {
       height: calc(var(--spacing) * 6);
+    }
+  }
+
+  @media (min-width: 40rem) {
+    .sm\:h-96 {
+      height: calc(var(--spacing) * 96);
     }
   }
 
@@ -1941,6 +1924,12 @@
   }
 
   @media (min-width: 48rem) {
+    .md\:h-\[450px\] {
+      height: 450px;
+    }
+  }
+
+  @media (min-width: 48rem) {
     .md\:h-\[500px\] {
       height: 500px;
     }
@@ -1995,6 +1984,12 @@
   }
 
   @media (min-width: 48rem) {
+    .md\:items-start {
+      align-items: flex-start;
+    }
+  }
+
+  @media (min-width: 48rem) {
     .md\:gap-8 {
       gap: calc(var(--spacing) * 8);
     }
@@ -2022,6 +2017,12 @@
   @media (min-width: 48rem) {
     .md\:p-12 {
       padding: calc(var(--spacing) * 12);
+    }
+  }
+
+  @media (min-width: 48rem) {
+    .md\:px-12 {
+      padding-inline: calc(var(--spacing) * 12);
     }
   }
 
@@ -2145,6 +2146,12 @@
   }
 
   @media (min-width: 64rem) {
+    .lg\:h-\[500px\] {
+      height: 500px;
+    }
+  }
+
+  @media (min-width: 64rem) {
     .lg\:h-\[600px\] {
       height: 600px;
     }
@@ -2163,6 +2170,12 @@
   }
 
   @media (min-width: 64rem) {
+    .lg\:max-w-lg {
+      max-width: var(--container-lg);
+    }
+  }
+
+  @media (min-width: 64rem) {
     .lg\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
@@ -2175,8 +2188,20 @@
   }
 
   @media (min-width: 64rem) {
+    .lg\:items-center {
+      align-items: center;
+    }
+  }
+
+  @media (min-width: 64rem) {
     .lg\:items-end {
       align-items: flex-end;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .lg\:justify-center {
+      justify-content: center;
     }
   }
 

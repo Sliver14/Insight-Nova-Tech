@@ -80,7 +80,7 @@ export default function WhatWeDoSection() {
 
   return (
     <section className="relative bg-black text-white py-24 md:py-32 overflow-hidden">
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-12 items-start">
+      <div className="relative w-full px-4 sm:px-6 lg:px-8 md:px-12 flex flex-col lg:flex-row gap-12 items-start">
         
         {/* LEFT: Category list + description & services */}
         <div className="flex-1 space-y-8 relative z-10">
@@ -152,23 +152,30 @@ export default function WhatWeDoSection() {
         </div>
 
         {/* RIGHT: Service Button + Dynamic Image */}
-        <div className="flex-1 relative flex flex-col items-start lg:items-end">
-          <div className="w-full h-96 md:h-[500px] relative">
+        <div className="flex-1 relative flex flex-col w-full lg:justify-center lg:items-center">
+
+          <div className="
+            relative
+            w-full
+            h-72 sm:h-96 md:h-[450px] lg:h-[500px]
+            lg:max-w-lg
+          ">
+
             <Image
               src={categories[activeCategory].image}
               alt={categories[activeCategory].title}
               fill
-              className="object-cover rounded-l-3xl transition-all duration-700"
+              className="object-cover rounded-xl transition-all duration-700"
               priority
             />
           </div>
 
-          <Link
+          {/* <Link
             href="/services"
             className="mt-8 inline-block border-2 border-white/50 text-white px-8 py-4 rounded-full font-medium hover:bg-white/10 transition duration-300"
           >
             Services →
-          </Link>
+          </Link> */}
         </div>
       </div>
     </section>
