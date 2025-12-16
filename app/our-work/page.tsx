@@ -16,7 +16,7 @@ export default function OurWorkPage() {
 
       <main className="bg-white pt-32">
         {/* Editorial Intro */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+        <section className="w-full mx-auto px-4 sm:px-6 lg:px-32 mb-20">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 max-w-3xl">
             Your Long-Term Product & Engineering Partner
           </h1>

@@ -100,23 +100,23 @@
   }
 }
 
-/* Custom scrollbar */
+Custom scrollbar
 ::-webkit-scrollbar {
   width: 8px;
 }
 
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   background: var(--background);
-}
+} */
 
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
   background: var(--primary);
   border-radius: 4px;
-}
+} */
 
-::-webkit-scrollbar-thumb:hover {
+/* ::-webkit-scrollbar-thumb:hover {
   background: var(--accent);
-}
+} */
 
 @keyframes marquee {
   0% {

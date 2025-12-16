@@ -34,7 +34,7 @@ const ProjectCard = ({ project, isFeatured = false })=>{
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                        className: "text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1A1A1A] mb-8 leading-tight",
+                        className: "text-xl sm:text-3xl lg:text-3xl font-bold text-[#1A1A1A] mb-8 leading-tight",
                         children: title
                     }, void 0, false, {
                         fileName: "[project]/components/projectCard.tsx",
@@ -1003,7 +1003,7 @@ function OurWorkPage() {
                 className: "bg-white pt-32",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                        className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20",
+                        className: "w-full mx-auto px-4 sm:px-6 lg:px-32 mb-20",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                 className: "text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 max-w-3xl",

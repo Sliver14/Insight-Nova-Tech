@@ -16,11 +16,12 @@ import {
   RefreshCcw,
   ArrowUpRight,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 
 export default function HomePage() {
   const featuredProjects = getFeaturedProjects();
-
+  const router = useRouter();
   return (
     <main className="w-screen flex flex-col bg-white">
       <Header />
@@ -48,31 +49,80 @@ export default function HomePage() {
         </div>
 
         {/* Video + Services Section */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 mt-20 lg:mt-32">
+        <div className="relative z-10 max-w-9xl px-6 sm:px-8 lg:px-12 mt-20 lg:mt-32">
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
             {/* Left: Video */}
-            <div className="relative w-full lg:w-1/2 h-[400px] sm:h-[500px] lg:h-[600px] flex-shrink-0">
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="absolute inset-0 w-full h-full object-cover rounded-br-[100px] sm:rounded-br-[150px] opacity-50"
-              >
-                <source src="/5c76ce4998ac6bcff7b7f60d_67e1e08d1c69ff97c254a4c9_Preview-U-Crop-Updated-optmized-transcode.mp4" type="video/mp4" />
-                <div className="absolute inset-0 bg-black/60" />
-              </video>
+            <div className="relative flex flex-1 w-full lg:w-1/2 h-[400px] sm:h-[500px] lg:h-[600px] shrink-0">
+              <div className="relative flex flex-1 w-full lg:w-1/2 h-[360px] sm:h-[460px] lg:h-[600px] shrink-0 overflow-hidden rounded-xl">
+  
+                {/* VIDEO */}
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="auto"
+                  poster="/video-poster.jpg" // IMPORTANT for mobile
+                  className="absolute inset-0 w-full h-full object-cover"
+                >
+                  <source
+                    src="/5c76ce4998ac6bcff7b7f60d_67e1e08d1c69ff97c254a4c9_Preview-U-Crop-Updated-optmized-transcode.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+
+                {/* DARK OVERLAY */}
+                <div className="absolute inset-0 bg-black/60 pointer-events-none" />
+
+              </div>
+
 
               {/* Work with us button overlay */}
               <div className="absolute top-8 left-8 z-20">
-                <button className="bg-neutral-600 text-white px-6 py-4 rounded-full font-medium hover:bg-neutral-500 transition">
-                  Work with us
+                <button
+                  onClick={() => router.push("/start-project")}
+                  className="
+                    group relative overflow-hidden
+                    flex items-center gap-3
+                    bg-neutral-600 text-white
+                    px-6 py-4 rounded-full font-medium
+                    hover:bg-neutral-500 transition
+                  "
+                >
+                  <span>Work with us</span>
+
+                  {/* Arrow container */}
+                  <span className="relative w-5 h-5 overflow-hidden">
+                    
+                    {/* Default arrow */}
+                    <ArrowUpRight
+                      className="
+                        absolute inset-0
+                        transition-all duration-300 ease-out
+                        group-hover:translate-x-2 group-hover:-translate-y-2
+                        group-hover:opacity-0
+                      "
+                    />
+
+                    {/* Hover arrow */}
+                    <ArrowUpRight
+                      className="
+                        absolute inset-0
+                        translate-x-[-0.75rem] translate-y-[0.75rem]
+                        opacity-0
+                        transition-all duration-300 ease-out
+                        group-hover:translate-x-0 group-hover:translate-y-0
+                        group-hover:opacity-100
+                      "
+                    />
+                  </span>
                 </button>
               </div>
+
             </div>
 
             {/* Right: Text & Services */}
-            <div className="w-full lg:w-1/2 flex flex-col justify-center">
+            <div className="w-full lg:w-1/2 flex flex-col flex-1 justify-center">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium text-white leading-tight mb-10 lg:mb-14 text-start lg:text-left">
                 We build innovative digital products with forward-thinking partners.
               </h2>
@@ -80,27 +130,27 @@ export default function HomePage() {
               {/* Services Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 lg:gap-x-20 gap-y-8 mb-12">
                 <div className="flex items-center gap-4 text-neutral-400">
-                  <Cpu className="w-6 h-6 flex-shrink-0" />
+                  <Cpu className="w-6 h-6 shrink-0" />
                   <span className="text-lg">Tech Development</span>
                 </div>
 
                 <div className="flex items-center gap-4 text-neutral-400">
-                  <PencilRuler className="w-6 h-6 flex-shrink-0" />
+                  <PencilRuler className="w-6 h-6 shrink-0" />
                   <span className="text-lg">Product Design</span>
                 </div>
 
                 <div className="flex items-center gap-4 text-neutral-400">
-                  <Sparkles className="w-6 h-6 flex-shrink-0" />
+                  <Sparkles className="w-6 h-6 shrink-0" />
                   <span className="text-lg">AI Solutions</span>
                 </div>
 
                 <div className="flex items-center gap-4 text-neutral-400">
-                  <TrendingUp className="w-6 h-6 flex-shrink-0" />
+                  <TrendingUp className="w-6 h-6 shrink-0" />
                   <span className="text-lg">Growth Marketing</span>
                 </div>
 
                 <div className="flex items-center gap-4 text-neutral-400">
-                  <RefreshCcw className="w-6 h-6 flex-shrink-0" />
+                  <RefreshCcw className="w-6 h-6 shrink-0" />
                   <span className="text-lg">Digital Transformation</span>
                 </div>
               </div>
@@ -115,7 +165,7 @@ export default function HomePage() {
         </div>
 
         {/* Trusted By / Partner Logos Section */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 mt-20 lg:mt-32">
+        <div className="relative z-10 w-full mx-auto px-6 sm:px-8 lg:px-12 mt-20 lg:mt-32">
           <div className="overflow-hidden">
             <div className="flex items-center gap-12 sm:gap-16 md:gap-24 animate-marquee md:animate-none whitespace-nowrap">
               {/* First set */}
@@ -173,7 +223,7 @@ export default function HomePage() {
         <div className="grid md:grid-cols-2 items-center gap-12 md:gap-20">
           {/* Left: Image with rounded right curve */}
           <div className="relative">
-            <div className="aspect-square md:aspect-auto md:h-full overflow-hidden rounded-l-full md:rounded-l-none">
+            <div className="aspect-square md:h-[520px] lg:h-[620px] overflow-hidden rounded-l-full md:rounded-l-none">
               <Image
                 src="https://media.istockphoto.com/id/1372067104/photo/studio-shot-of-a-young-businessman-cheering-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=CpLEYyzUVIggz_EARHPd2nrL9MJeBAR8v4a85C7KLXM="
                 alt="Excited professional celebrating success"

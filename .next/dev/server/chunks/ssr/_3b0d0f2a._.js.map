@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/dell/Desktop/Sylver/CODE%20PROJECTS/Nextjs%20Projects/Insight%20Nova%20Tech/app/our-company/page.tsx"],"sourcesContent":["\"use client\"\r\nimport React from 'react'\r\n\r\nfunction page() {\r\n  return (\r\n    <div>page</div>\r\n  )\r\n}\r\n\r\nexport default page"],"names":[],"mappings":";;;;;AAAA;;AAGA,SAAS;IACP,qBACE,8OAAC;kBAAI;;;;;;AAET;uCAEe"}},
+    {"offset": {"line": 25, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/dell/Desktop/Sylver/CODE%20PROJECTS/Nextjs%20Projects/Insight%20Nova%20Tech/node_modules/next/src/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = (\n  require('../../module.compiled') as typeof import('../../module.compiled')\n).vendored['react-ssr']!.ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":"AAAAA,OAAOC,OAAO,GACZC,QAAQ,4HACRC,QAAQ,CAAC,YAAY,CAAEC,kBAAkB","ignoreList":[0]}}]
+}

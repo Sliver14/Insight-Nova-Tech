@@ -31,7 +31,7 @@ const ProjectCard = ({ project, isFeatured = false }) => {
           {tagline || `Best for ${category}`}
         </p>
 
-        <h3 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1A1A1A] mb-8 leading-tight">
+        <h3 className="text-xl sm:text-3xl lg:text-3xl font-bold text-[#1A1A1A] mb-8 leading-tight">
           {title}
         </h3>
 
@@ -46,17 +46,35 @@ const ProjectCard = ({ project, isFeatured = false }) => {
             bg-gray-200 text-gray-800 cursor-pointer
             px-8 py-4 rounded-full font-semibold
             transition-all duration-300
-            hover:bg-gray-300
+            hover:bg-black hover:text-white
           "
         >
           View all
-          <ArrowUpRight
-            className="
-              w-5 h-5
-              transition-transform duration-300
-              group-hover:translate-x-1 group-hover:-translate-y-1
-            "
-          />
+          {/* Arrow container */}
+                  <span className="relative w-5 h-5 overflow-hidden hover:text-white">
+                    
+                    {/* Default arrow */}
+                    <ArrowUpRight
+                      className="
+                        absolute inset-0
+                        transition-all duration-300 ease-out
+                        group-hover:translate-x-2 group-hover:-translate-y-2
+                        group-hover:opacity-0
+                      "
+                    />
+
+                    {/* Hover arrow */}
+                    <ArrowUpRight
+                      className="
+                        absolute inset-0
+                        translate-x-[-0.75rem] translate-y-[0.75rem]
+                        opacity-0
+                        transition-all duration-300 ease-out
+                        group-hover:translate-x-0 group-hover:translate-y-0
+                        group-hover:opacity-100
+                      "
+                    />
+                  </span>
         </button>
       </div>
 

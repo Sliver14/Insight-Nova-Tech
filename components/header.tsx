@@ -68,7 +68,7 @@ const Header = () => {
       >
         <div className="mx-auto max-w-7xl flex items-center justify-between h-16 md:h-20 px-4 sm:px-6 lg:px-8">
           {/* Logo */}
-          <Link href="/" className="flex-shrink-0">
+          <Link href="/" className="shrink-0">
             <Image
               src={isPastHero ? "/insightnovatech logo dark222.png" : "/insightnovatech logo lightpng23.png"}
               alt="Insight Nova Tech"
@@ -81,7 +81,7 @@ const Header = () => {
 
           {/* Desktop Navigation - centered */}
           <nav className="hidden lg:flex flex-1 justify-center">
-            <div className="flex items-center gap-12 xl:gap-20 text-lg">
+            <div className="flex items-center gap-12 xl:gap-20 text-md">
               <Link 
                 href="/our-company" 
                 className="hover:opacity-70 transition"
@@ -104,7 +104,7 @@ const Header = () => {
             {/* CTA - responsive visibility */}
             <Link
               href="/start-project"
-              className="hidden sm:inline-flex items-center gap-2 text-base md:text-lg font-medium hover:gap-3 transition-all duration-300"
+              className="hidden sm:inline-flex items-center gap-2 text-base md:text-md font-medium hover:gap-3 transition-all duration-300"
               onClick={() => setMobileMenuOpen(false)}
             >
               Start a project
@@ -150,18 +150,7 @@ const Header = () => {
           role="dialog" 
           aria-modal="true"
         >
-          {/* Top CTA in mobile menu */}
-          <div className="px-6 mb-10">
-            <Link
-              href="/start-project"
-              className="inline-flex items-center gap-3 text-2xl font-medium hover:gap-4 transition-all"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Start a project
-              <ArrowUpRight className="w-7 h-7" />
-            </Link>
-          </div>
-
+          
           {/* Main Navigation */}
           <nav className="flex-1 flex flex-col items-center justify-center gap-12">
             <Link
