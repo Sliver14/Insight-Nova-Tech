@@ -82,12 +82,19 @@ const Header = () => {
           {/* Desktop Navigation - centered */}
           <nav className="hidden lg:flex flex-1 justify-center">
             <div className="flex items-center gap-12 xl:gap-20 text-md">
-              <Link 
+              <Link
                 href="/our-company" 
                 className="hover:opacity-70 transition"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Our Company
+              </Link>
+              <Link 
+                href="/our-services" 
+                className="hover:opacity-70 transition"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Our Services
               </Link>
               <Link 
                 href="/our-work" 
@@ -100,7 +107,7 @@ const Header = () => {
           </nav>
 
           {/* Right: CTA + Hamburger */}
-          <div className="flex items-center gap-5 md:gap-8">
+          <div className="flex items-center gap-5 md:gap-16">
             {/* CTA - responsive visibility */}
             <Link
               href="/start-project"
@@ -108,7 +115,7 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               Start a project
-                          {/* Arrow container */}
+            {/* Arrow container */}
             <span className="relative w-5 h-5 overflow-hidden">
               
               {/* Default arrow */}
@@ -125,7 +132,7 @@ const Header = () => {
               <ArrowUpRight
                 className="
                   absolute inset-0
-                  translate-x-[-0.75rem] translate-y-[0.75rem]
+                  translate-x-3 translate-y-3
                   opacity-0
                   transition-all duration-300 ease-out
                   group-hover:translate-x-0 group-hover:translate-y-0
@@ -142,27 +149,29 @@ const Header = () => {
               aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileMenuOpen}
             >
-              <div className="relative w-7 h-5">
-                {/* Top line */}
-                <span className={`
-                  absolute left-0 top-0 w-full h-0.5 rounded-full transition-all duration-300
-                  ${mobileMenuOpen ? "rotate-45 translate-y-2.5" : "rotate-0"}
-                  ${isPastHero ? "bg-black" : "bg-white"}
-                `} />
-                {/* Middle line */}
-                <span className={`
-                  absolute left-0 top-2 w-full h-0.5 rounded-full transition-all duration-300
-                  ${mobileMenuOpen ? "opacity-0" : "opacity-100"}
-                  ${isPastHero ? "bg-black" : "bg-white"}
-                `} />
-                {/* Bottom line */}
-                <span className={`
-                  absolute left-0 top-4 w-full h-0.5 rounded-full transition-all duration-300
-                  ${mobileMenuOpen ? "-rotate-45 -translate-y-2" : "opacity-60"}
-                  ${isPastHero ? "bg-black" : "bg-white"}
-                `} />
+              <div className="relative w-8 md:w-12 h-6">
+                {/* Line 1 */}
+                <span
+                  className={`
+                    absolute inset-x-0 top-1/2 h-0.5 rounded-full
+                    transition-transform duration-300
+                    ${mobileMenuOpen ? "rotate-45" : "-translate-y-2"}
+                    ${isPastHero ? "bg-black" : "bg-white"}
+                  `}
+                />
+
+                {/* Line 2 */}
+                <span
+                  className={`
+                    absolute inset-x-0 top-1/2 h-0.5 rounded-full
+                    transition-transform opacity-50 duration-300
+                    ${mobileMenuOpen ? "-rotate-45" : "translate-y-2"}
+                    ${isPastHero ? "bg-black" : "bg-white"}
+                  `}
+                />
               </div>
             </button>
+
           </div>
         </div>
       </header>
@@ -180,16 +189,30 @@ const Header = () => {
             <Link
               href="/our-company"
               onClick={() => setMobileMenuOpen(false)}
-              className="text-5xl sm:text-6xl font-bold hover:text-white/60 transition"
+              className="text-3xl sm:text-4xl font-bold hover:text-white/60 transition"
             >
               Our Company
             </Link>
             <Link
+              href="/our-services"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-3xl sm:text-4xl font-bold hover:text-white/60 transition"
+            >
+              Our Services
+            </Link>
+            <Link
               href="/our-work"
               onClick={() => setMobileMenuOpen(false)}
-              className="text-5xl sm:text-6xl font-bold hover:text-white/60 transition"
+              className="text-3xl sm:text-4xl font-bold hover:text-white/60 transition"
             >
               Our Work
+            </Link>
+            <Link
+              href="/start-project"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-3xl sm:text-4xl font-bold hover:text-white/60 transition sm:hidden"
+            >
+              Start a project
             </Link>
           </nav>
 

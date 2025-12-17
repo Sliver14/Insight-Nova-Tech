@@ -125,8 +125,8 @@ const projectsData = [
         isFeatured: false
     },
     {
-        title: 'Omnia Hotel PMS',
-        slug: 'omnia-hotel-pms',
+        title: 'Hotel Management System',
+        slug: 'hotel-management-system',
         description: 'A property management system tailored for hotels and short-stay businesses.',
         category: 'Hospitality',
         projectType: 'Hotel Property Management System',
@@ -242,11 +242,11 @@ const projectsData = [
         isFeatured: false
     },
     {
-        title: 'School Education Management System',
-        slug: 'school-education-management-system',
+        title: 'Learning Management System',
+        slug: 'learning-management-system',
         description: 'Comprehensive system for managing school operations and learning flow.',
         category: 'EdTech',
-        projectType: 'School Management System',
+        projectType: 'Learning Management System',
         overview: 'Supports student management, classes, assessments, and progress tracking.',
         impact: [
             'Digitized academic workflows',
@@ -290,7 +290,7 @@ const projectsData = [
     }
 ];
 const getProjects = ()=>projectsData;
-const getFeaturedProjects = ()=>projectsData.filter((p)=>p.isFeatured).slice(0, 2);
+const getFeaturedProjects = ()=>projectsData.filter((p)=>p.isFeatured).slice(0, 4);
 const getProjectBySlug = (slug)=>projectsData.find((p)=>p.slug === slug);
 }),
 "[project]/components/contactCTASection.tsx [app-rsc] (client reference proxy) <module evaluation>", ((__turbopack_context__) => {

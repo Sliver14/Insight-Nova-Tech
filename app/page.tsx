@@ -169,17 +169,17 @@ export default function HomePage() {
           <div className="overflow-hidden">
             <div className="flex items-center gap-12 sm:gap-16 md:gap-24 animate-marquee md:animate-none whitespace-nowrap">
               {/* First set */}
-              <Image src="/brands logo/67608fbae911f6aaf6dd24ca_Logo Samsung.svg" alt="Samsung" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
-              <Image src="/brands logo/67608fe5dab4348d94ee6cc9_Coca-Cola Brand.svg" alt="Coca-Cola" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
-              <Image src="/brands logo/67608ff410d975107897344c_Brand Verizon.svg" alt="Verizon" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
-              <Image src="/brands logo/676090109234d980622102dd_Brand DirecTV.svg" alt="DirecTV" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
-              <Image src="/brands logo/6760902d036c8f0efdfa14b7_Warner Music Group.svg" alt="Warner Music Group" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
+              <Image src="/brands logo/67608fbae911f6aaf6dd24ca_Logo Samsung.svg" alt="Samsung" width={160} height={60} className="h-5 md:h-8 w-auto grayscale hover:grayscale-0 transition" />
+              <Image src="/brands logo/67608fe5dab4348d94ee6cc9_Coca-Cola Brand.svg" alt="Coca-Cola" width={160} height={60} className="h-5 md:h-8 w-auto grayscale hover:grayscale-0 transition" />
+              <Image src="/brands logo/67608ff410d975107897344c_Brand Verizon.svg" alt="Verizon" width={160} height={60} className="h-5 md:h-8 w-auto grayscale hover:grayscale-0 transition" />
+              <Image src="/brands logo/676090109234d980622102dd_Brand DirecTV.svg" alt="DirecTV" width={160} height={60} className="h-5 md:h-8 w-auto grayscale hover:grayscale-0 transition" />
+              <Image src="/brands logo/6760902d036c8f0efdfa14b7_Warner Music Group.svg" alt="Warner Music Group" width={160} height={60} className="h-5 md:h-8 w-auto grayscale hover:grayscale-0 transition" />
 
               {/* Duplicate set for seamless loop */}
-              <Image src="/brands logo/67608fbae911f6aaf6dd24ca_Logo Samsung.svg" alt="Samsung" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
-              <Image src="/brands logo/67608fe5dab4348d94ee6cc9_Coca-Cola Brand.svg" alt="Coca-Cola" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
-              <Image src="/brands logo/67608ff410d975107897344c_Brand Verizon.svg" alt="Verizon" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
-              <Image src="/brands logo/676090109234d980622102dd_Brand DirecTV.svg" alt="DirecTV" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
+              <Image src="/brands logo/67608fbae911f6aaf6dd24ca_Logo Samsung.svg" alt="Samsung" width={160} height={60} className="h-5 md:h-8 w-auto grayscale hover:grayscale-0 transition" />
+              <Image src="/brands logo/67608fe5dab4348d94ee6cc9_Coca-Cola Brand.svg" alt="Coca-Cola" width={160} height={60} className="h-5 md:h-8 w-auto grayscale hover:grayscale-0 transition" />
+              <Image src="/brands logo/67608ff410d975107897344c_Brand Verizon.svg" alt="Verizon" width={160} height={60} className="h-5 md:h-8 w-auto grayscale hover:grayscale-0 transition" />
+              <Image src="/brands logo/676090109234d980622102dd_Brand DirecTV.svg" alt="DirecTV" width={160} height={60} className="h-5 md:h-8 w-auto grayscale hover:grayscale-0 transition" />
               <Image src="/brands logo/6760902d036c8f0efdfa14b7_Warner Music Group.svg" alt="Warner Music Group" width={160} height={60} className="h-8 w-auto grayscale hover:grayscale-0 transition" />
             </div>
           </div>
@@ -200,7 +200,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-        <div className="flex w-full justify-center pt-20">
+        <div className="flex mx-auto px-4 sm:px-6 lg:px-8 w-full justify-start md:justify-center pt-20">
           <button
             onClick={() => router.push("/our-work")}
             className="
@@ -230,7 +230,7 @@ export default function HomePage() {
               <ArrowUpRight
                 className="
                   absolute inset-0
-                  translate-x-[-0.75rem] translate-y-[0.75rem]
+                  translate-x-3 translate-y-3
                   opacity-0
                   transition-all duration-300 ease-out
                   group-hover:translate-x-0 group-hover:translate-y-0
@@ -264,12 +264,12 @@ export default function HomePage() {
         <div className="grid md:grid-cols-2 items-center gap-12 md:gap-20">
           {/* Left: Image with rounded right curve */}
           <div className="relative">
-            <div className="aspect-square md:h-[520px] lg:h-[620px] overflow-hidden rounded-l-full md:rounded-l-none">
+            <div className="aspect-square md:h-[520px] lg:h-[620px] overflow-hidden rounded-l-full">
               <Image
-                src="https://media.istockphoto.com/id/1372067104/photo/studio-shot-of-a-young-businessman-cheering-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=CpLEYyzUVIggz_EARHPd2nrL9MJeBAR8v4a85C7KLXM="
+                src="/sylver potrait.png"
                 alt="Excited professional celebrating success"
                 fill
-                className="object-cover"
+                className="object-cover rounded-2xl"
                 priority
               />
             </div>
@@ -283,22 +283,70 @@ export default function HomePage() {
               We look for interesting challenges that move people forward.
             </h2>
 
-            <div className="flex flex-col sm:flex-row gap-6">
-              <Link
-                href="/careers"
-                className="group inline-flex items-center justify-center gap-3 bg-black text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition duration-300"
+            <div className="flex sm:flex-row gap-6 items-center">
+              <button
+                onClick={() => router.push("/services")}
+                className="group relative inline-flex cursor-pointer items-center justify-center gap-3 bg-black text-white px-8 py-4 rounded-full font-medium hover:bg-neutral-600 transition duration-300"
               >
-                Careers
-                <ArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
-              </Link>
+                Products
+                {/* Arrow container */}
+                  <span className="relative w-5 h-5 overflow-hidden">
+                    
+                    {/* Default arrow */}
+                    <ArrowUpRight
+                      className="
+                        absolute inset-0
+                        transition-all duration-300 ease-out
+                        group-hover:translate-x-2 group-hover:-translate-y-2
+                        group-hover:opacity-0
+                      "
+                    />
 
-              <Link
-                href="/about"
-                className="group inline-flex items-center gap-3 text-gray-700 font-medium hover:text-gray-900 transition duration-300"
+                    {/* Hover arrow */}
+                    <ArrowUpRight
+                      className="
+                        absolute inset-0
+                        translate-x-[-0.75rem] translate-y-[0.75rem]
+                        opacity-0
+                        transition-all duration-300 ease-out
+                        group-hover:translate-x-0 group-hover:translate-y-0
+                        group-hover:opacity-100
+                      "
+                    />
+                  </span>
+              </button>
+
+              <button
+                onClick={() => router.push("/our-company")}
+                className="group relative inline-flex cursor-pointer items-center gap-3 text-gray-600 font-medium hover:text-gray-900 transition duration-300"
               >
                 About us
-                <ArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
-              </Link>
+                {/* Arrow container */}
+                  <span className="relative w-5 h-5 overflow-hidden">
+                    
+                    {/* Default arrow */}
+                    <ArrowUpRight
+                      className="
+                        absolute inset-0
+                        transition-all duration-300 ease-out
+                        group-hover:translate-x-2 group-hover:-translate-y-2
+                        group-hover:opacity-0
+                      "
+                    />
+
+                    {/* Hover arrow */}
+                    <ArrowUpRight
+                      className="
+                        absolute inset-0
+                        translate-x-[-0.75rem] translate-y-[0.75rem]
+                        opacity-0
+                        transition-all duration-300 ease-out
+                        group-hover:translate-x-0 group-hover:translate-y-0
+                        group-hover:opacity-100
+                      "
+                    />
+                  </span>
+              </button>
             </div>
           </div>
         </div>
