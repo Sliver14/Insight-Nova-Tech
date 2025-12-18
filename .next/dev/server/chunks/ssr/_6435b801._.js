@@ -331,7 +331,6 @@ const projectsData = [
             '/efemena construction/Bloom-Ty - Google Chrome 18-Dec-25 11_58_13 AM.png',
             '/efemena construction/Bloom-Ty - Google Chrome 18-Dec-25 11_58_27 AM.png',
             '/efemena construction/Bloom-Ty - Google Chrome 18-Dec-25 11_58_35 AM.png',
-            '/efemena construction/efemena-construction.vercel.app_ (1).png',
             '/efemena construction/efemena-construction.vercel.app_.png',
             '/efemena construction/Screenshot_20251218_114606_Chrome.jpg',
             '/efemena construction/Screenshot_20251218_114614_Chrome.jpg',
@@ -387,7 +386,7 @@ const projectsData = [
         ],
         images: [
             '/lms/online-school-olive.vercel.app_ (12).png',
-            '/lms/online-school-olive.vercel.app_ (10).png',
+            // '/lms/online-school-olive.vercel.app_ (10).png',
             '/lms/online-school-olive.vercel.app_ (11).png',
             '/lms/online-school-olive.vercel.app_ (13).png',
             '/lms/Screenshot_20251218_114906_Chrome.jpg',
@@ -419,8 +418,6 @@ const projectsData = [
             '/doi creative/Bloom-Ty - Google Chrome 18-Dec-25 12_47_34 PM.png',
             '/doi creative/Bloom-Ty - Google Chrome 18-Dec-25 12_47_43 PM.png',
             '/doi creative/Bloom-Ty - Google Chrome 18-Dec-25 12_47_48 PM.png',
-            '/doi creative/doi-creative.vercel.app_ (1).png',
-            '/doi creative/doi-creative.vercel.app_ (2).png',
             '/doi creative/Screenshot_20251218_114503_Chrome.jpg',
             '/doi creative/Screenshot_20251218_114524_Chrome.jpg'
         ],

@@ -221,7 +221,6 @@ const projectsData = [
             '/efemena construction/Bloom-Ty - Google Chrome 18-Dec-25 11_58_13 AM.png',
             '/efemena construction/Bloom-Ty - Google Chrome 18-Dec-25 11_58_27 AM.png',
             '/efemena construction/Bloom-Ty - Google Chrome 18-Dec-25 11_58_35 AM.png',
-            '/efemena construction/efemena-construction.vercel.app_ (1).png',
             '/efemena construction/efemena-construction.vercel.app_.png',
             '/efemena construction/Screenshot_20251218_114606_Chrome.jpg',
             '/efemena construction/Screenshot_20251218_114614_Chrome.jpg',
@@ -277,7 +276,7 @@ const projectsData = [
         ],
         images: [
             '/lms/online-school-olive.vercel.app_ (12).png',
-            '/lms/online-school-olive.vercel.app_ (10).png',
+            // '/lms/online-school-olive.vercel.app_ (10).png',
             '/lms/online-school-olive.vercel.app_ (11).png',
             '/lms/online-school-olive.vercel.app_ (13).png',
             '/lms/Screenshot_20251218_114906_Chrome.jpg',
@@ -309,8 +308,6 @@ const projectsData = [
             '/doi creative/Bloom-Ty - Google Chrome 18-Dec-25 12_47_34 PM.png',
             '/doi creative/Bloom-Ty - Google Chrome 18-Dec-25 12_47_43 PM.png',
             '/doi creative/Bloom-Ty - Google Chrome 18-Dec-25 12_47_48 PM.png',
-            '/doi creative/doi-creative.vercel.app_ (1).png',
-            '/doi creative/doi-creative.vercel.app_ (2).png',
             '/doi creative/Screenshot_20251218_114503_Chrome.jpg',
             '/doi creative/Screenshot_20251218_114524_Chrome.jpg'
         ],
@@ -633,7 +630,7 @@ async function ProjectDetailPage({ params }) {
                         className: "mt-12 md:mt-16",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-lg sm:text-xl md:text-2xl font-semibold text-[#1A1A1A] mb-4",
+                                className: "text-lg sm:text-xl md:text-2xl font-semibold text-[#1A1A1A] mb-6",
                                 children: "Gallery"
                             }, void 0, false, {
                                 fileName: "[project]/app/our-work/[slug]/page.tsx",
@@ -641,27 +638,28 @@ async function ProjectDetailPage({ params }) {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6",
+                                className: "columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4",
                                 children: project.images.map((img, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "relative w-full h-48 sm:h-56 md:h-64 rounded-lg overflow-hidden shadow-md",
+                                        className: "break-inside-avoid rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                             src: img,
                                             alt: `${project.title} screenshot ${index + 1}`,
-                                            fill: true,
-                                            className: "object-cover"
+                                            width: 800,
+                                            height: 1200,
+                                            className: "w-full h-auto object-cover"
                                         }, void 0, false, {
                                             fileName: "[project]/app/our-work/[slug]/page.tsx",
-                                            lineNumber: 109,
+                                            lineNumber: 111,
                                             columnNumber: 17
                                         }, this)
                                     }, index, false, {
                                         fileName: "[project]/app/our-work/[slug]/page.tsx",
-                                        lineNumber: 105,
+                                        lineNumber: 107,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/app/our-work/[slug]/page.tsx",
-                                lineNumber: 103,
+                                lineNumber: 105,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -678,12 +676,12 @@ async function ProjectDetailPage({ params }) {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$contactCTASection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/our-work/[slug]/page.tsx",
-                lineNumber: 121,
+                lineNumber: 124,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/our-work/[slug]/page.tsx",
-                lineNumber: 122,
+                lineNumber: 125,
                 columnNumber: 7
             }, this)
         ]

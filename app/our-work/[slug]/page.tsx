@@ -95,22 +95,25 @@ export default async function ProjectDetailPage({ params }) {
           </aside>
         </div>
 
-        {/* Gallery */}
+        {/* Gallery Section */}
         <div className="mt-12 md:mt-16">
-          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#1A1A1A] mb-4">
+          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#1A1A1A] mb-6">
             Gallery
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
+          
+          {/* Masonry Container */}
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
             {project.images.map((img, index) => (
-              <div
-                key={index}
-                className="relative w-full h-48 sm:h-56 md:h-64 rounded-lg overflow-hidden shadow-md"
+              <div 
+                key={index} 
+                className="break-inside-avoid rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300"
               >
                 <Image
                   src={img}
                   alt={`${project.title} screenshot ${index + 1}`}
-                  fill
-                  className="object-cover"
+                  width={800} // Providing width/height allows for natural aspect ratios
+                  height={1200}
+                  className="w-full h-auto object-cover"
                 />
               </div>
             ))}
