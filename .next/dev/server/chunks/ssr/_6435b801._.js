@@ -2,58 +2,6 @@ module.exports = [
 "[project]/components/projectCard.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-// "use client";
-// import Image from "next/image";
-// import { useRouter } from "next/navigation";
-// import { ArrowUpRight } from "lucide-react";
-// const ProjectCard = ({ project, index, isFeatured }) => {
-//   const { title, tagline, category, images, slug } = project;
-//   const imageSrc = images?.[0];
-//   const router = useRouter();
-//   // Row-based alternation logic
-//   const rowIndex = Math.floor(index / 2);
-//   const isFirstInRow = index % 2 === 0;
-//   const isWide =
-//     rowIndex % 2 === 0
-//       ? isFirstInRow   // even row → wide left
-//       : !isFirstInRow; // odd row → wide right
-//   return (
-//     <article
-//       onClick={() => router.push(`/our-work/${slug}`)}
-//       className={`
-//         group cursor-pointer
-//         col-span-12
-//         ${isWide ? "md:col-span-7" : "md:col-span-5"}
-//       `}
-//     >
-//       {/* IMAGE */}
-//       <div className="relative h-[420px] w-full overflow-hidden rounded-xl">
-//         <Image
-//           src={imageSrc}
-//           alt={title}
-//           fill
-//           className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
-//         />
-//         {/* Hover button */}
-//         <div className="absolute bottom-6 left-6">
-//           <button className="bg-white/90 backdrop-blur px-5 py-5 rounded-full opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition">
-//             <ArrowUpRight className="w-5 h-5 text-black" />
-//           </button>
-//         </div>
-//       </div>
-//       {/* TEXT */}
-//       <div className="mt-4 space-y-1">
-//         <p className="text-sm text-gray-500">
-//           {tagline || category}
-//         </p>
-//         <h3 className="text-xl font-semibold text-gray-900">
-//           {title}
-//         </h3>
-//       </div>
-//     </article>
-//   );
-// };
-// export default ProjectCard;
 __turbopack_context__.s([
     "default",
     ()=>ProjectCard
@@ -62,7 +10,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-up-right.js [app-ssr] (ecmascript) <export default as ArrowUpRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -75,8 +25,8 @@ function ProjectCard({ project, index = 0, isFeatured = false }) {
     const rowIndex = Math.floor(index / 2);
     const isFirstInRow = index % 2 === 0;
     const isWide = rowIndex % 2 === 0 ? isFirstInRow : !isFirstInRow;
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-        onClick: ()=>router.push(`/our-work/${slug}`),
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+        href: `/our-work/${slug}`,
         className: `
         group cursor-pointer col-span-12 
         ${isFeatured ? isWide ? "md:col-span-7" : "md:col-span-5" : "md:col-span-4"}
@@ -92,14 +42,14 @@ function ProjectCard({ project, index = 0, isFeatured = false }) {
                     className: "object-cover transition-transform duration-700 group-hover:scale-[1.05]"
                 }, void 0, false, {
                     fileName: "[project]/components/projectCard.tsx",
-                    lineNumber: 102,
+                    lineNumber: 41,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "absolute inset-0 bg-black/30 group-hover:bg-black/50 transition"
                 }, void 0, false, {
                     fileName: "[project]/components/projectCard.tsx",
-                    lineNumber: 111,
+                    lineNumber: 50,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -110,17 +60,17 @@ function ProjectCard({ project, index = 0, isFeatured = false }) {
                             className: "w-5 h-5 text-black"
                         }, void 0, false, {
                             fileName: "[project]/components/projectCard.tsx",
-                            lineNumber: 117,
+                            lineNumber: 56,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/projectCard.tsx",
-                        lineNumber: 115,
+                        lineNumber: 54,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/projectCard.tsx",
-                    lineNumber: 114,
+                    lineNumber: 53,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -130,7 +80,7 @@ function ProjectCard({ project, index = 0, isFeatured = false }) {
                             className: "absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent"
                         }, void 0, false, {
                             fileName: "[project]/components/projectCard.tsx",
-                            lineNumber: 124,
+                            lineNumber: 63,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -141,7 +91,7 @@ function ProjectCard({ project, index = 0, isFeatured = false }) {
                                     children: tagline || category
                                 }, void 0, false, {
                                     fileName: "[project]/components/projectCard.tsx",
-                                    lineNumber: 128,
+                                    lineNumber: 67,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -149,30 +99,30 @@ function ProjectCard({ project, index = 0, isFeatured = false }) {
                                     children: title
                                 }, void 0, false, {
                                     fileName: "[project]/components/projectCard.tsx",
-                                    lineNumber: 132,
+                                    lineNumber: 71,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/projectCard.tsx",
-                            lineNumber: 127,
+                            lineNumber: 66,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/projectCard.tsx",
-                    lineNumber: 122,
+                    lineNumber: 61,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/projectCard.tsx",
-            lineNumber: 101,
+            lineNumber: 40,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/projectCard.tsx",
-        lineNumber: 93,
+        lineNumber: 32,
         columnNumber: 5
     }, this);
 }
