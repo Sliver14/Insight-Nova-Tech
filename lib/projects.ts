@@ -56,6 +56,7 @@ export const projectsData = [
     impact: ['Reduced manual P2P trading effort', 'Improved trade execution speed'],
     techStack: ['Node.js'],
     images: [
+      '/insight bot/Blog - Baytech Consulting.jpeg',
       '/insight bot/Screenshot_20251218_112832_Bybit.jpg',
       '/insight bot/Screenshot_20251218_112920_Bybit.jpg',
     ],
@@ -71,6 +72,7 @@ export const projectsData = [
     impact: ['Centralized service management', 'Improved customer booking flow'],
     techStack: ['Next.js', 'Node.js', 'React Native'],
     images: [
+      '/bloomty/beauty-mockup.png',
       '/bloomty/Bloom-Ty - Google Chrome 18-Dec-25 11_32_09 AM.png',
       '/bloomty/Bloom-Ty - Google Chrome 18-Dec-25 11_32_09 AM.png',
       '/bloomty/bloom-ty.vercel.app_ (1).png',
@@ -181,8 +183,8 @@ export const projectsData = [
     impact: ['Stronger personal brand presence'],
     techStack: ['Next.js'],
     images: [
-      '/creative emmy/Bloom-Ty - Google Chrome 18-Dec-25 11_57_23 AM.png',
       '/creative emmy/Bloom-Ty - Google Chrome 18-Dec-25 11_57_37 AM.png',
+      '/creative emmy/Bloom-Ty - Google Chrome 18-Dec-25 11_57_23 AM.png',
       '/creative emmy/Bloom-Ty - Google Chrome 18-Dec-25 11_57_44 AM.png',
       '/creative emmy/Bloom-Ty - Google Chrome 18-Dec-25 11_57_57 AM.png',
       '/creative emmy/creatie-emmy.vercel.app_.png',
@@ -205,9 +207,9 @@ export const projectsData = [
     impact: ['Digitized academic workflows', 'Improved student performance tracking'],
     techStack: ['Next.js', 'Node.js'],
     images: [
+      '/lms/online-school-olive.vercel.app_ (12).png',
       '/lms/online-school-olive.vercel.app_ (10).png',
       '/lms/online-school-olive.vercel.app_ (11).png',
-      '/lms/online-school-olive.vercel.app_ (12).png',
       '/lms/online-school-olive.vercel.app_ (13).png',
       '/lms/Screenshot_20251218_114906_Chrome.jpg',
       '/lms/Screenshot_20251218_114954_Chrome.jpg',
@@ -226,8 +228,8 @@ export const projectsData = [
     impact: ['Increased client engagement'],
     techStack: ['Next.js'],
     images: [
-      '/doi creative/Bloom-Ty - Google Chrome 18-Dec-25 12_46_56 PM.png',
       '/doi creative/Bloom-Ty - Google Chrome 18-Dec-25 12_47_03 PM.png',
+      '/doi creative/Bloom-Ty - Google Chrome 18-Dec-25 12_46_56 PM.png',
       '/doi creative/Bloom-Ty - Google Chrome 18-Dec-25 12_47_09 PM.png',
       '/doi creative/Bloom-Ty - Google Chrome 18-Dec-25 12_47_17 PM.png',
       '/doi creative/Bloom-Ty - Google Chrome 18-Dec-25 12_47_26 PM.png',

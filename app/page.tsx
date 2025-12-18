@@ -39,11 +39,11 @@ export default function HomePage() {
 
         {/* Hero Headline & Description */}
         <div className="relative z-10 max-w-5xl px-6 sm:px-8 lg:px-12 text-start lg:text-left">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium text-white mb-5 leading-tight">
             Custom Web & Mobile Software Solutions
           </h1>
 
-          <p className="text-lg sm:text-xl text-white/50 max-w-3xl mx-auto lg:mx-0">
+          <p className=" text-base sm:text-lg text-white/60 max-w-3xl">
             A modern tech agency specializing in high-performance applications, enterprise platforms, and transformative digital experiences.
           </p>
         </div>
@@ -82,10 +82,12 @@ export default function HomePage() {
                 <button
                   onClick={() => router.push("/start-project")}
                   className="
-                    group relative overflow-hidden
-                    flex items-center gap-3
-                    bg-neutral-600 text-white
-                    px-6 py-4 rounded-full font-medium
+                    group flex items-center gap-3
+                  bg-neutral-600 text-white
+                    px-5 py-3 md:px-6 md:py-4
+                    rounded-full
+                    text-sm md:text-base
+                    font-medium
                     hover:bg-neutral-500 transition
                   "
                 >
@@ -123,7 +125,13 @@ export default function HomePage() {
 
             {/* Right: Text & Services */}
             <div className="w-full lg:w-1/2 flex flex-col flex-1 justify-center">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium text-white leading-tight mb-10 lg:mb-14 text-start lg:text-left">
+              <h2 className="
+                text-2xl sm:text-3xl lg:text-4xl
+                font-medium
+              text-white
+                leading-snug
+                mb-8 lg:mb-12
+                ">
                 We build innovative digital products with forward-thinking partners.
               </h2>
 
@@ -131,7 +139,7 @@ export default function HomePage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 lg:gap-x-20 gap-y-8 mb-12">
                 <div className="flex items-center gap-4 text-neutral-400">
                   <Cpu className="w-6 h-6 shrink-0" />
-                  <span className="text-lg">Tech Development</span>
+                  <span className="text-sm sm:text-base text-neutral-400">Tech Development</span>
                 </div>
 
                 <div className="flex items-center gap-4 text-neutral-400">
@@ -187,7 +195,7 @@ export default function HomePage() {
       </section>
 
       {/* 2. Top Featured Projects */}
-      <section className="py-20 md:py-28">
+      <section className="py-16 md:py-24">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-12 gap-8">
             {featuredProjects.map((project, index) => (
@@ -204,10 +212,12 @@ export default function HomePage() {
           <button
             onClick={() => router.push("/our-work")}
             className="
-              group relative overflow-hidden
-              flex items-center gap-3
+              group flex items-center gap-3
               bg-black text-white
-              px-6 py-4 rounded-full font-medium
+              px-5 py-3 md:px-6 md:py-4
+              rounded-full
+              text-sm md:text-base
+              font-medium
               hover:bg-neutral-600 transition
             "
           >
@@ -266,7 +276,7 @@ export default function HomePage() {
           <div className="relative">
             <div className="aspect-square md:h-[520px] lg:h-[620px] overflow-hidden rounded-l-full">
               <Image
-                src="/sylver potrait.png"
+                src="/67dc898397506cafcebc181f_visualelectric-1742506359313.avif"
                 alt="Excited professional celebrating success"
                 fill
                 className="object-cover rounded-2xl"
@@ -277,18 +287,30 @@ export default function HomePage() {
 
           {/* Right: Text Content */}
           <div className="space-y-12">
-            <p className="text-lg text-gray-500">About Us</p>
+            <p className="text-sm text-gray-500 uppercase tracking-wide">About Us</p>
 
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
+            <h2 className="
+              text-2xl md:text-3xl lg:text-4xl
+              font-medium
+              leading-snug
+            text-gray-900
+            ">
               We look for interesting challenges that move people forward.
             </h2>
 
             <div className="flex sm:flex-row gap-6 items-center">
               <button
                 onClick={() => router.push("/services")}
-                className="group relative inline-flex cursor-pointer items-center justify-center gap-3 bg-black text-white px-8 py-4 rounded-full font-medium hover:bg-neutral-600 transition duration-300"
-              >
-                Products
+                className="
+                  inline-flex items-center gap-3
+                  bg-black text-white
+                  px-6 py-3
+                  rounded-full
+                  text-sm md:text-base
+                  font-medium
+                  hover:bg-neutral-600 transition
+                ">
+                Services
                 {/* Arrow container */}
                   <span className="relative w-5 h-5 overflow-hidden">
                     
@@ -306,7 +328,7 @@ export default function HomePage() {
                     <ArrowUpRight
                       className="
                         absolute inset-0
-                        translate-x-[-0.75rem] translate-y-[0.75rem]
+                        translate-x-3 translate-y-3
                         opacity-0
                         transition-all duration-300 ease-out
                         group-hover:translate-x-0 group-hover:translate-y-0
@@ -318,8 +340,13 @@ export default function HomePage() {
 
               <button
                 onClick={() => router.push("/our-company")}
-                className="group relative inline-flex cursor-pointer items-center gap-3 text-gray-600 font-medium hover:text-gray-900 transition duration-300"
-              >
+                className="
+                  inline-flex items-center gap-3
+                  text-sm md:text-base
+                  font-medium
+                text-gray-600
+                hover:text-gray-900 transition
+              ">
                 About us
                 {/* Arrow container */}
                   <span className="relative w-5 h-5 overflow-hidden">

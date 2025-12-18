@@ -243,9 +243,27 @@ const Header = () => {
           {/* Footer */}
           <div className="border-t border-white/10 px-6 py-10 text-center text-sm text-white/50">
             <div className="flex justify-center gap-8 mb-6">
-              <a href="#" className="hover:text-white transition">LinkedIn →</a>
-              <a href="#" className="hover:text-white transition">Twitter →</a>
-              <a href="#" className="hover:text-white transition">Instagram →</a>
+              <a 
+                target="_blank"
+                href="https://www.linkedin.com/in/sylver-oyinaga-7409481a9/" 
+                className="hover:text-white transition"
+              >
+                LinkedIn →
+              </a>
+              <a 
+                target="_blank"
+                href="https://x.com/SylvaFx?t=HwJ0xmqC8oFGi4MR3aDOcQ&s=09" 
+                className="hover:text-white transition"
+              >
+                Twitter →
+              </a>
+              <a 
+                target="_blank"
+                href="https://www.instagram.com/insightnovatech?igsh=cTVuOGpleXVvMWx4" 
+                className="hover:text-white transition"
+              >
+                Instagram →
+              </a>
             </div>
             <p>© 2025 Insight Nova Tech</p>
           </div>
