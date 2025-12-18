@@ -2,9 +2,61 @@
 "[project]/components/projectCard.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
+// "use client";
+// import Image from "next/image";
+// import { useRouter } from "next/navigation";
+// import { ArrowUpRight } from "lucide-react";
+// const ProjectCard = ({ project, index, isFeatured }) => {
+//   const { title, tagline, category, images, slug } = project;
+//   const imageSrc = images?.[0];
+//   const router = useRouter();
+//   // Row-based alternation logic
+//   const rowIndex = Math.floor(index / 2);
+//   const isFirstInRow = index % 2 === 0;
+//   const isWide =
+//     rowIndex % 2 === 0
+//       ? isFirstInRow   // even row → wide left
+//       : !isFirstInRow; // odd row → wide right
+//   return (
+//     <article
+//       onClick={() => router.push(`/our-work/${slug}`)}
+//       className={`
+//         group cursor-pointer
+//         col-span-12
+//         ${isWide ? "md:col-span-7" : "md:col-span-5"}
+//       `}
+//     >
+//       {/* IMAGE */}
+//       <div className="relative h-[420px] w-full overflow-hidden rounded-xl">
+//         <Image
+//           src={imageSrc}
+//           alt={title}
+//           fill
+//           className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+//         />
+//         {/* Hover button */}
+//         <div className="absolute bottom-6 left-6">
+//           <button className="bg-white/90 backdrop-blur px-5 py-5 rounded-full opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition">
+//             <ArrowUpRight className="w-5 h-5 text-black" />
+//           </button>
+//         </div>
+//       </div>
+//       {/* TEXT */}
+//       <div className="mt-4 space-y-1">
+//         <p className="text-sm text-gray-500">
+//           {tagline || category}
+//         </p>
+//         <h3 className="text-xl font-semibold text-gray-900">
+//           {title}
+//         </h3>
+//       </div>
+//     </article>
+//   );
+// };
+// export default ProjectCard;
 __turbopack_context__.s([
     "default",
-    ()=>__TURBOPACK__default__export__
+    ()=>ProjectCard
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
@@ -16,103 +68,122 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-const ProjectCard = ({ project, index, isFeatured })=>{
+function ProjectCard({ project, index = 0, isFeatured = false }) {
     _s();
     const { title, tagline, category, images, slug } = project;
     const imageSrc = images?.[0];
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
-    // Row-based alternation logic
+    // Row-based alternation (matches your existing logic)
     const rowIndex = Math.floor(index / 2);
     const isFirstInRow = index % 2 === 0;
-    const isWide = rowIndex % 2 === 0 ? isFirstInRow // even row → wide left
-     : !isFirstInRow; // odd row → wide right
+    const isWide = rowIndex % 2 === 0 ? isFirstInRow : !isFirstInRow;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
         onClick: ()=>router.push(`/our-work/${slug}`),
         className: `
-        group cursor-pointer
-        col-span-12
-        ${isWide ? "md:col-span-7" : "md:col-span-5"}
+        group cursor-pointer col-span-12 
+        ${isFeatured ? isWide ? "md:col-span-7" : "md:col-span-5" : "md:col-span-4"}
       `,
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative h-[420px] w-full overflow-hidden rounded-xl",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        src: imageSrc,
-                        alt: title,
-                        fill: true,
-                        className: "object-cover transition-transform duration-700 group-hover:scale-[1.04]"
-                    }, void 0, false, {
-                        fileName: "[project]/components/projectCard.tsx",
-                        lineNumber: 32,
-                        columnNumber: 9
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute bottom-6 left-6",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "bg-white/90 backdrop-blur px-5 py-5 rounded-full opacity-0 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 transition",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
-                                className: "w-5 h-5 text-black"
-                            }, void 0, false, {
-                                fileName: "[project]/components/projectCard.tsx",
-                                lineNumber: 42,
-                                columnNumber: 13
-                            }, ("TURBOPACK compile-time value", void 0))
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "relative h-[420px] md:h-[520px] w-full overflow-hidden rounded-2xl",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    src: imageSrc,
+                    alt: title,
+                    fill: true,
+                    priority: isFeatured,
+                    className: "object-cover transition-transform duration-700 group-hover:scale-[1.05]"
+                }, void 0, false, {
+                    fileName: "[project]/components/projectCard.tsx",
+                    lineNumber: 102,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "absolute inset-0 bg-black/30 group-hover:bg-black/50 transition"
+                }, void 0, false, {
+                    fileName: "[project]/components/projectCard.tsx",
+                    lineNumber: 111,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "absolute top-6 right-6",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "flex items-center justify-center w-12 h-12 rounded-full bg-white/90 backdrop-blur   opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
+                            className: "w-5 h-5 text-black"
                         }, void 0, false, {
                             fileName: "[project]/components/projectCard.tsx",
-                            lineNumber: 41,
+                            lineNumber: 117,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/projectCard.tsx",
+                        lineNumber: 115,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/projectCard.tsx",
+                    lineNumber: 114,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "absolute inset-x-0 bottom-0",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent"
+                        }, void 0, false, {
+                            fileName: "[project]/components/projectCard.tsx",
+                            lineNumber: 124,
                             columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0))
-                    }, void 0, false, {
-                        fileName: "[project]/components/projectCard.tsx",
-                        lineNumber: 40,
-                        columnNumber: 9
-                    }, ("TURBOPACK compile-time value", void 0))
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/projectCard.tsx",
-                lineNumber: 31,
-                columnNumber: 7
-            }, ("TURBOPACK compile-time value", void 0)),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mt-4 space-y-1",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-sm text-gray-500",
-                        children: tagline || category
-                    }, void 0, false, {
-                        fileName: "[project]/components/projectCard.tsx",
-                        lineNumber: 49,
-                        columnNumber: 9
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                        className: "text-xl font-semibold text-gray-900",
-                        children: title
-                    }, void 0, false, {
-                        fileName: "[project]/components/projectCard.tsx",
-                        lineNumber: 53,
-                        columnNumber: 9
-                    }, ("TURBOPACK compile-time value", void 0))
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/projectCard.tsx",
-                lineNumber: 48,
-                columnNumber: 7
-            }, ("TURBOPACK compile-time value", void 0))
-        ]
-    }, void 0, true, {
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative p-6 md:p-8 text-white",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-sm text-white/70",
+                                    children: tagline || category
+                                }, void 0, false, {
+                                    fileName: "[project]/components/projectCard.tsx",
+                                    lineNumber: 128,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: "text-2xl md:text-3xl font-semibold mt-2 leading-tight",
+                                    children: title
+                                }, void 0, false, {
+                                    fileName: "[project]/components/projectCard.tsx",
+                                    lineNumber: 132,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/projectCard.tsx",
+                            lineNumber: 127,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/projectCard.tsx",
+                    lineNumber: 122,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/projectCard.tsx",
+            lineNumber: 101,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
         fileName: "[project]/components/projectCard.tsx",
-        lineNumber: 22,
+        lineNumber: 93,
         columnNumber: 5
-    }, ("TURBOPACK compile-time value", void 0));
-};
+    }, this);
+}
 _s(ProjectCard, "fN7XvhJ+p5oE6+Xlo0NJmXpxjC8=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];
 });
 _c = ProjectCard;
-const __TURBOPACK__default__export__ = ProjectCard;
 var _c;
 __turbopack_context__.k.register(_c, "ProjectCard");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
@@ -150,12 +221,15 @@ const projectsData = [
             'React Native'
         ],
         images: [
-            'https://picsum.photos/seed/reno-crypto-1/800/600',
-            'https://picsum.photos/seed/reno-crypto-2/800/600',
-            'https://picsum.photos/seed/reno-crypto-3/800/600',
-            'https://picsum.photos/seed/reno-crypto-4/800/600',
-            'https://picsum.photos/seed/reno-crypto-5/800/600',
-            'https://picsum.photos/seed/reno-crypto-6/800/600'
+            '/reno/original-5ae26a232c2de792dde565fe8903b319.png',
+            '/reno/logo22.png',
+            '/reno/Screenshot_20251217_021859_Reno.jpg',
+            '/reno/Screenshot_20251217_021909_Reno.jpg',
+            '/reno/Screenshot_20251217_021920_Reno.jpg',
+            '/reno/Screenshot_20251217_021929_Reno.jpg',
+            '/reno/Screenshot_20251217_021935_Reno.jpg',
+            '/reno/Screenshot_20251217_021945_Reno.jpg',
+            '/reno/Screenshot_20251217_022005_Reno.jpg'
         ],
         isFeatured: true
     },
@@ -176,12 +250,15 @@ const projectsData = [
             'Socket.IO'
         ],
         images: [
-            'https://picsum.photos/seed/nexuschat-1/800/600',
-            'https://picsum.photos/seed/nexuschat-2/800/600',
-            'https://picsum.photos/seed/nexuschat-3/800/600',
-            'https://picsum.photos/seed/nexuschat-4/800/600',
-            'https://picsum.photos/seed/nexuschat-5/800/600',
-            'https://picsum.photos/seed/nexuschat-6/800/600'
+            '/nexus-chat/Free Laptop & Smart Phone Mockup For Your Design Presentation2.png',
+            '/nexus-chat/localhost_3000_.png',
+            '/nexus-chat/localhost_3000_signin (1).png',
+            '/nexus-chat/localhost_3000_signin (2).png',
+            '/nexus-chat/localhost_3000_signin.png',
+            '/nexus-chat/Screenshot 2025-09-25 033852.png',
+            '/nexus-chat/WhatsApp Image 2025-12-18 at 09.35.31_3c1fe245.jpg',
+            '/nexus-chat/WhatsApp Image 2025-12-18 at 09.35.32_1561e45f.jpg',
+            '/nexus-chat/WhatsApp Image 2025-12-18 at 09.35.32_3e778a7c.jpg'
         ],
         isFeatured: true
     },
@@ -200,13 +277,10 @@ const projectsData = [
             'Node.js'
         ],
         images: [
-            'https://picsum.photos/seed/insight-bot-1/800/600',
-            'https://picsum.photos/seed/insight-bot-2/800/600',
-            'https://picsum.photos/seed/insight-bot-3/800/600',
-            'https://picsum.photos/seed/insight-bot-4/800/600',
-            'https://picsum.photos/seed/insight-bot-5/800/600'
+            '/insight bot/Screenshot_20251218_112832_Bybit.jpg',
+            '/insight bot/Screenshot_20251218_112920_Bybit.jpg'
         ],
-        isFeatured: true
+        isFeatured: false
     },
     {
         title: 'Bloomty',
@@ -225,66 +299,58 @@ const projectsData = [
             'React Native'
         ],
         images: [
-            'https://picsum.photos/seed/bloomty-marketplace-1/800/600',
-            'https://picsum.photos/seed/bloomty-marketplace-2/800/600',
-            'https://picsum.photos/seed/bloomty-marketplace-3/800/600',
-            'https://picsum.photos/seed/bloomty-marketplace-4/800/600',
-            'https://picsum.photos/seed/bloomty-marketplace-5/800/600',
-            'https://picsum.photos/seed/bloomty-marketplace-6/800/600'
-        ],
-        isFeatured: false
-    },
-    {
-        title: 'Hotel Management System',
-        slug: 'hotel-management-system',
-        description: 'A property management system tailored for hotels and short-stay businesses.',
-        category: 'Hospitality',
-        projectType: 'Hotel Property Management System',
-        overview: 'Manages reservations, rooms, billing, and operational reporting.',
-        impact: [
-            'Streamlined hotel operations',
-            'Reduced manual booking errors'
-        ],
-        techStack: [
-            'Next.js',
-            'Node.js'
-        ],
-        images: [
-            'https://picsum.photos/seed/omnia-pms-1/800/600',
-            'https://picsum.photos/seed/omnia-pms-2/800/600',
-            'https://picsum.photos/seed/omnia-pms-3/800/600',
-            'https://picsum.photos/seed/omnia-pms-4/800/600',
-            'https://picsum.photos/seed/omnia-pms-5/800/600',
-            'https://picsum.photos/seed/omnia-pms-6/800/600'
+            '/bloomty/Bloom-Ty - Google Chrome 18-Dec-25 11_32_09 AM.png',
+            '/bloomty/Bloom-Ty - Google Chrome 18-Dec-25 11_32_09 AM.png',
+            '/bloomty/bloom-ty.vercel.app_ (1).png',
+            '/bloomty/bloom-ty.vercel.app_.png',
+            '/bloomty/222.png',
+            '/bloomty/221.png',
+            '/bloomty/Screenshot_20251218_113457_Chrome.jpg',
+            '/bloomty/Screenshot_20251218_113515_Chrome.jpg',
+            '/bloomty/Screenshot_20251218_113522_Chrome.jpg',
+            '/bloomty/Screenshot_20251218_113616_Chrome.jpg',
+            '/bloomty/Screenshot_20251218_113622_Chrome.jpg'
         ],
         isFeatured: true
     },
-    {
-        title: 'Klimars Space Gym Management System',
-        slug: 'klimars-space-gym',
-        description: 'QR-enabled gym management system for access control and member tracking.',
-        category: 'Fitness',
-        projectType: 'Gym Management System',
-        overview: 'Handles memberships, attendance, and mobile access using QR codes.',
-        impact: [
-            'Improved member check-in efficiency',
-            'Automated attendance tracking'
-        ],
-        techStack: [
-            'Next.js',
-            'Node.js',
-            'React Native'
-        ],
-        images: [
-            'https://picsum.photos/seed/klimars-gym-1/800/600',
-            'https://picsum.photos/seed/klimars-gym-2/800/600',
-            'https://picsum.photos/seed/klimars-gym-3/800/600',
-            'https://picsum.photos/seed/klimars-gym-4/800/600',
-            'https://picsum.photos/seed/klimars-gym-5/800/600',
-            'https://picsum.photos/seed/klimars-gym-6/800/600'
-        ],
-        isFeatured: true
-    },
+    // {
+    //   title: 'Hotel Management System',
+    //   slug: 'hotel-management-system',
+    //   description: 'A property management system tailored for hotels and short-stay businesses.',
+    //   category: 'Hospitality',
+    //   projectType: 'Hotel Property Management System',
+    //   overview: 'Manages reservations, rooms, billing, and operational reporting.',
+    //   impact: ['Streamlined hotel operations', 'Reduced manual booking errors'],
+    //   techStack: ['Next.js', 'Node.js'],
+    //   images: [
+    //     'https://picsum.photos/seed/omnia-pms-1/800/600',
+    //     'https://picsum.photos/seed/omnia-pms-2/800/600',
+    //     'https://picsum.photos/seed/omnia-pms-3/800/600',
+    //     'https://picsum.photos/seed/omnia-pms-4/800/600',
+    //     'https://picsum.photos/seed/omnia-pms-5/800/600',
+    //     'https://picsum.photos/seed/omnia-pms-6/800/600',
+    //   ],
+    //   isFeatured: false,
+    // },
+    // {
+    //   title: 'Klimars Space Gym',
+    //   slug: 'klimars-space-gym',
+    //   description: 'QR-enabled gym management system for access control and member tracking.',
+    //   category: 'Fitness',
+    //   projectType: 'Gym Management System',
+    //   overview: 'Handles memberships, attendance, and mobile access using QR codes.',
+    //   impact: ['Improved member check-in efficiency', 'Automated attendance tracking'],
+    //   techStack: ['Next.js', 'Node.js', 'React Native'],
+    //   images: [
+    //     'https://picsum.photos/seed/klimars-gym-1/800/600',
+    //     'https://picsum.photos/seed/klimars-gym-2/800/600',
+    //     'https://picsum.photos/seed/klimars-gym-3/800/600',
+    //     'https://picsum.photos/seed/klimars-gym-4/800/600',
+    //     'https://picsum.photos/seed/klimars-gym-5/800/600',
+    //     'https://picsum.photos/seed/klimars-gym-6/800/600',
+    //   ],
+    //   isFeatured: false,
+    // },
     {
         title: 'Lampsiheirs',
         slug: 'lampsiheirs',
@@ -299,11 +365,17 @@ const projectsData = [
             'Next.js'
         ],
         images: [
-            'https://picsum.photos/seed/lampsiheirs-1/800/600',
-            'https://picsum.photos/seed/lampsiheirs-2/800/600',
-            'https://picsum.photos/seed/lampsiheirs-3/800/600',
-            'https://picsum.photos/seed/lampsiheirs-4/800/600',
-            'https://picsum.photos/seed/lampsiheirs-5/800/600'
+            '/lampsi heirs/Bloom-Ty - Google Chrome 18-Dec-25 12_00_10 PM.png',
+            '/lampsi heirs/Bloom-Ty - Google Chrome 18-Dec-25 12_00_23 PM.png',
+            '/lampsi heirs/Bloom-Ty - Google Chrome 18-Dec-25 12_00_38 PM.png',
+            '/lampsi heirs/Bloom-Ty - Google Chrome 18-Dec-25 12_00_52 PM.png',
+            '/lampsi heirs/Bloom-Ty - Google Chrome 18-Dec-25 12_01_09 PM.png',
+            '/lampsi heirs/Screenshot_20251218_114714_Chrome.jpg',
+            '/lampsi heirs/Screenshot_20251218_114744_Chrome.jpg',
+            '/lampsi heirs/Screenshot_20251218_114804_Chrome.jpg',
+            '/lampsi heirs/Screenshot_20251218_114815_Chrome.jpg',
+            '/lampsi heirs/www.lampsiheirs.com_ (1).png',
+            '/lampsi heirs/www.lampsiheirs.com_.png'
         ],
         isFeatured: false
     },
@@ -321,11 +393,17 @@ const projectsData = [
             'Next.js'
         ],
         images: [
-            'https://picsum.photos/seed/efemena-construction-1/800/600',
-            'https://picsum.photos/seed/efemena-construction-2/800/600',
-            'https://picsum.photos/seed/efemena-construction-3/800/600',
-            'https://picsum.photos/seed/efemena-construction-4/800/600',
-            'https://picsum.photos/seed/efemena-construction-5/800/600'
+            '/efemena construction/Bloom-Ty - Google Chrome 18-Dec-25 11_58_13 AM.png',
+            '/efemena construction/Bloom-Ty - Google Chrome 18-Dec-25 11_58_27 AM.png',
+            '/efemena construction/Bloom-Ty - Google Chrome 18-Dec-25 11_58_35 AM.png',
+            '/efemena construction/efemena-construction.vercel.app_ (1).png',
+            '/efemena construction/efemena-construction.vercel.app_.png',
+            '/efemena construction/Screenshot_20251218_114606_Chrome.jpg',
+            '/efemena construction/Screenshot_20251218_114614_Chrome.jpg',
+            '/efemena construction/Screenshot_20251218_114622_Chrome.jpg',
+            '/efemena construction/Screenshot_20251218_114631_Chrome.jpg',
+            '/efemena construction/Screenshot_20251218_114637_Chrome.jpg',
+            '/efemena construction/Screenshot_20251218_114657_Chrome.jpg'
         ],
         isFeatured: false
     },
@@ -343,11 +421,17 @@ const projectsData = [
             'Next.js'
         ],
         images: [
-            'https://picsum.photos/seed/creative-emmy-1/800/600',
-            'https://picsum.photos/seed/creative-emmy-2/800/600',
-            'https://picsum.photos/seed/creative-emmy-3/800/600',
-            'https://picsum.photos/seed/creative-emmy-4/800/600',
-            'https://picsum.photos/seed/creative-emmy-5/800/600'
+            '/creative emmy/Bloom-Ty - Google Chrome 18-Dec-25 11_57_23 AM.png',
+            '/creative emmy/Bloom-Ty - Google Chrome 18-Dec-25 11_57_37 AM.png',
+            '/creative emmy/Bloom-Ty - Google Chrome 18-Dec-25 11_57_44 AM.png',
+            '/creative emmy/Bloom-Ty - Google Chrome 18-Dec-25 11_57_57 AM.png',
+            '/creative emmy/creatie-emmy.vercel.app_.png',
+            '/creative emmy/Screenshot_20251218_114327_Chrome.jpg',
+            '/creative emmy/Screenshot_20251218_114333_Chrome.jpg',
+            '/creative emmy/Screenshot_20251218_114402_Chrome.jpg',
+            '/creative emmy/Screenshot_20251218_114410_Chrome.jpg',
+            '/creative emmy/Screenshot_20251218_114419_Chrome.jpg',
+            '/creative emmy/Screenshot_20251218_114430_Chrome.jpg'
         ],
         isFeatured: false
     },
@@ -367,12 +451,14 @@ const projectsData = [
             'Node.js'
         ],
         images: [
-            'https://picsum.photos/seed/school-ems-1/800/600',
-            'https://picsum.photos/seed/school-ems-2/800/600',
-            'https://picsum.photos/seed/school-ems-3/800/600',
-            'https://picsum.photos/seed/school-ems-4/800/600',
-            'https://picsum.photos/seed/school-ems-5/800/600',
-            'https://picsum.photos/seed/school-ems-6/800/600'
+            '/lms/online-school-olive.vercel.app_ (10).png',
+            '/lms/online-school-olive.vercel.app_ (11).png',
+            '/lms/online-school-olive.vercel.app_ (12).png',
+            '/lms/online-school-olive.vercel.app_ (13).png',
+            '/lms/Screenshot_20251218_114906_Chrome.jpg',
+            '/lms/Screenshot_20251218_114954_Chrome.jpg',
+            '/lms/Screenshot_20251218_115012_Chrome.jpg',
+            '/lms/Screenshot_20251218_115023_Chrome.jpg'
         ],
         isFeatured: true
     },
@@ -390,11 +476,18 @@ const projectsData = [
             'Next.js'
         ],
         images: [
-            'https://picsum.photos/seed/doi-creative-1/800/600',
-            'https://picsum.photos/seed/doi-creative-2/800/600',
-            'https://picsum.photos/seed/doi-creative-3/800/600',
-            'https://picsum.photos/seed/doi-creative-4/800/600',
-            'https://picsum.photos/seed/doi-creative-5/800/600'
+            '/doi creative/Bloom-Ty - Google Chrome 18-Dec-25 12_46_56 PM.png',
+            '/doi creative/Bloom-Ty - Google Chrome 18-Dec-25 12_47_03 PM.png',
+            '/doi creative/Bloom-Ty - Google Chrome 18-Dec-25 12_47_09 PM.png',
+            '/doi creative/Bloom-Ty - Google Chrome 18-Dec-25 12_47_17 PM.png',
+            '/doi creative/Bloom-Ty - Google Chrome 18-Dec-25 12_47_26 PM.png',
+            '/doi creative/Bloom-Ty - Google Chrome 18-Dec-25 12_47_34 PM.png',
+            '/doi creative/Bloom-Ty - Google Chrome 18-Dec-25 12_47_43 PM.png',
+            '/doi creative/Bloom-Ty - Google Chrome 18-Dec-25 12_47_48 PM.png',
+            '/doi creative/doi-creative.vercel.app_ (1).png',
+            '/doi creative/doi-creative.vercel.app_ (2).png',
+            '/doi creative/Screenshot_20251218_114503_Chrome.jpg',
+            '/doi creative/Screenshot_20251218_114524_Chrome.jpg'
         ],
         isFeatured: false
     }
@@ -509,23 +602,33 @@ const Header = ()=>{
                                 className: "flex items-center gap-12 xl:gap-20 text-md",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "/our-company",
+                                        href: "/",
                                         className: "hover:opacity-70 transition",
                                         onClick: ()=>setMobileMenuOpen(false),
-                                        children: "Our Company"
+                                        children: "Home"
                                     }, void 0, false, {
                                         fileName: "[project]/components/header.tsx",
                                         lineNumber: 85,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "/our-services",
+                                        href: "/our-company",
                                         className: "hover:opacity-70 transition",
                                         onClick: ()=>setMobileMenuOpen(false),
-                                        children: "Our Services"
+                                        children: "About Us"
                                     }, void 0, false, {
                                         fileName: "[project]/components/header.tsx",
                                         lineNumber: 92,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: "/our-services",
+                                        className: "hover:opacity-70 transition",
+                                        onClick: ()=>setMobileMenuOpen(false),
+                                        children: "Services"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/header.tsx",
+                                        lineNumber: 99,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -535,7 +638,7 @@ const Header = ()=>{
                                         children: "Our Work"
                                     }, void 0, false, {
                                         fileName: "[project]/components/header.tsx",
-                                        lineNumber: 99,
+                                        lineNumber: 106,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
@@ -565,31 +668,31 @@ const Header = ()=>{
                                                     className: "   absolute inset-0   transition-all duration-300 ease-out   group-hover:translate-x-2 group-hover:-translate-y-2   group-hover:opacity-0   "
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/header.tsx",
-                                                    lineNumber: 122,
+                                                    lineNumber: 129,
                                                     columnNumber: 15
                                                 }, ("TURBOPACK compile-time value", void 0)),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
                                                     className: "   absolute inset-0   translate-x-3 translate-y-3   opacity-0   transition-all duration-300 ease-out   group-hover:translate-x-0 group-hover:translate-y-0   group-hover:opacity-100   "
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/header.tsx",
-                                                    lineNumber: 132,
+                                                    lineNumber: 139,
                                                     columnNumber: 15
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/header.tsx",
-                                            lineNumber: 119,
+                                            lineNumber: 126,
                                             columnNumber: 13
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/header.tsx",
-                                    lineNumber: 112,
+                                    lineNumber: 119,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0)),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>setMobileMenuOpen((prev)=>!prev),
-                                    className: "relative w-10 h-10 flex items-center justify-center",
+                                    className: "relative w-10 h-10 flex cursor-pointer items-center justify-center",
                                     "aria-label": mobileMenuOpen ? "Close menu" : "Open menu",
                                     "aria-expanded": mobileMenuOpen,
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -604,7 +707,19 @@ const Header = ()=>{
                   `
                                             }, void 0, false, {
                                                 fileName: "[project]/components/header.tsx",
-                                                lineNumber: 154,
+                                                lineNumber: 161,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: `
+                    absolute inset-x-0 top-1/2 h-0.5 rounded-full
+                    transition-opacity duration-200
+                    ${mobileMenuOpen ? "opacity-0" : "opacity-100"}
+                    ${isPastHero ? "bg-black" : "bg-white"}
+                  `
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/header.tsx",
+                                                lineNumber: 171,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -616,24 +731,24 @@ const Header = ()=>{
                   `
                                             }, void 0, false, {
                                                 fileName: "[project]/components/header.tsx",
-                                                lineNumber: 164,
+                                                lineNumber: 181,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/header.tsx",
-                                        lineNumber: 152,
+                                        lineNumber: 159,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, void 0, false, {
                                     fileName: "[project]/components/header.tsx",
-                                    lineNumber: 146,
+                                    lineNumber: 153,
                                     columnNumber: 13
                                 }, ("TURBOPACK compile-time value", void 0))
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/header.tsx",
-                            lineNumber: 110,
+                            lineNumber: 117,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
@@ -656,23 +771,33 @@ const Header = ()=>{
                         className: "flex-1 flex flex-col items-center justify-center gap-12",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/",
+                                onClick: ()=>setMobileMenuOpen(false),
+                                className: "text-3xl sm:text-4xl font-bold hover:text-white/60 transition",
+                                children: "Home"
+                            }, void 0, false, {
+                                fileName: "[project]/components/header.tsx",
+                                lineNumber: 206,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/our-company",
                                 onClick: ()=>setMobileMenuOpen(false),
                                 className: "text-3xl sm:text-4xl font-bold hover:text-white/60 transition",
-                                children: "Our Company"
+                                children: "About Us"
                             }, void 0, false, {
                                 fileName: "[project]/components/header.tsx",
-                                lineNumber: 189,
+                                lineNumber: 213,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/our-services",
                                 onClick: ()=>setMobileMenuOpen(false),
                                 className: "text-3xl sm:text-4xl font-bold hover:text-white/60 transition",
-                                children: "Our Services"
+                                children: "Services"
                             }, void 0, false, {
                                 fileName: "[project]/components/header.tsx",
-                                lineNumber: 196,
+                                lineNumber: 220,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -682,7 +807,7 @@ const Header = ()=>{
                                 children: "Our Work"
                             }, void 0, false, {
                                 fileName: "[project]/components/header.tsx",
-                                lineNumber: 203,
+                                lineNumber: 227,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -692,13 +817,13 @@ const Header = ()=>{
                                 children: "Start a project"
                             }, void 0, false, {
                                 fileName: "[project]/components/header.tsx",
-                                lineNumber: 210,
+                                lineNumber: 234,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/header.tsx",
-                        lineNumber: 188,
+                        lineNumber: 205,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -713,7 +838,7 @@ const Header = ()=>{
                                         children: "LinkedIn →"
                                     }, void 0, false, {
                                         fileName: "[project]/components/header.tsx",
-                                        lineNumber: 222,
+                                        lineNumber: 246,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -722,7 +847,7 @@ const Header = ()=>{
                                         children: "Twitter →"
                                     }, void 0, false, {
                                         fileName: "[project]/components/header.tsx",
-                                        lineNumber: 223,
+                                        lineNumber: 247,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -731,32 +856,32 @@ const Header = ()=>{
                                         children: "Instagram →"
                                     }, void 0, false, {
                                         fileName: "[project]/components/header.tsx",
-                                        lineNumber: 224,
+                                        lineNumber: 248,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/header.tsx",
-                                lineNumber: 221,
+                                lineNumber: 245,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 children: "© 2025 Insight Nova Tech"
                             }, void 0, false, {
                                 fileName: "[project]/components/header.tsx",
-                                lineNumber: 226,
+                                lineNumber: 250,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/header.tsx",
-                        lineNumber: 220,
+                        lineNumber: 244,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/header.tsx",
-                lineNumber: 181,
+                lineNumber: 198,
                 columnNumber: 9
             }, ("TURBOPACK compile-time value", void 0))
         ]
@@ -1947,7 +2072,7 @@ function HomePage() {
                                 }, project.slug, false, {
                                     fileName: "[project]/app/page.tsx",
                                     lineNumber: 194,
-                                    columnNumber: 15
+                                    columnNumber: 13
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/page.tsx",

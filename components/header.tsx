@@ -83,18 +83,25 @@ const Header = () => {
           <nav className="hidden lg:flex flex-1 justify-center">
             <div className="flex items-center gap-12 xl:gap-20 text-md">
               <Link
+                href="/" 
+                className="hover:opacity-70 transition"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link
                 href="/our-company" 
                 className="hover:opacity-70 transition"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Our Company
+                About Us
               </Link>
               <Link 
                 href="/our-services" 
                 className="hover:opacity-70 transition"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Our Services
+                Services
               </Link>
               <Link 
                 href="/our-work" 
@@ -145,7 +152,7 @@ const Header = () => {
             {/* Hamburger → X */}
             <button
               onClick={() => setMobileMenuOpen(prev => !prev)}
-              className="relative w-10 h-10 flex items-center justify-center"
+              className="relative w-10 h-10 flex cursor-pointer items-center justify-center"
               aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileMenuOpen}
             >
@@ -161,6 +168,16 @@ const Header = () => {
                 />
 
                 {/* Line 2 */}
+                <span
+                  className={`
+                    absolute inset-x-0 top-1/2 h-0.5 rounded-full
+                    transition-opacity duration-200
+                    ${mobileMenuOpen ? "opacity-0" : "opacity-100"}
+                    ${isPastHero ? "bg-black" : "bg-white"}
+                  `}
+                />
+
+                {/* Line 3 */}
                 <span
                   className={`
                     absolute inset-x-0 top-1/2 h-0.5 rounded-full
@@ -187,18 +204,25 @@ const Header = () => {
           {/* Main Navigation */}
           <nav className="flex-1 flex flex-col items-center justify-center gap-12">
             <Link
+              href="/"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-3xl sm:text-4xl font-bold hover:text-white/60 transition"
+            >
+              Home
+            </Link>
+            <Link
               href="/our-company"
               onClick={() => setMobileMenuOpen(false)}
               className="text-3xl sm:text-4xl font-bold hover:text-white/60 transition"
             >
-              Our Company
+              About Us
             </Link>
             <Link
               href="/our-services"
               onClick={() => setMobileMenuOpen(false)}
               className="text-3xl sm:text-4xl font-bold hover:text-white/60 transition"
             >
-              Our Services
+              Services
             </Link>
             <Link
               href="/our-work"

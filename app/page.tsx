@@ -191,12 +191,12 @@ export default function HomePage() {
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-12 gap-8">
             {featuredProjects.map((project, index) => (
-              <ProjectCard
-                key={project.slug}
-                project={project}
-                index={index}
-                isFeatured={true}
-              />
+            <ProjectCard
+              key={project.slug}
+              project={project}
+              index={index}
+              isFeatured
+            />
             ))}
           </div>
         </div>

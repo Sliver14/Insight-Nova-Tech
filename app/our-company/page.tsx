@@ -89,7 +89,7 @@ export default function AboutPage() {
       <Header />
 
       {/* HERO */}
-      <section className="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16 items-center">
+      <section className="max-w-7xl mx-auto px-6 py-12 md:py-20 grid md:grid-cols-2 gap-16 items-center">
         <div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Accelerated with impact and results
@@ -123,11 +123,11 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 items-center">
           <div className="flex justify-around">
             <div className="text-center">
-              <p className="text-4xl font-bold">150</p>
+              <p className="text-4xl font-bold">3</p>
               <p className="text-gray-400 text-sm uppercase">Awards Won</p>
             </div>
             <div className="text-center">
-              <p className="text-4xl font-bold">100+</p>
+              <p className="text-4xl font-bold">20+</p>
               <p className="text-gray-400 text-sm uppercase">Clients Served</p>
             </div>
           </div>
@@ -158,8 +158,8 @@ export default function AboutPage() {
 
         <div className="grid grid-cols-3 gap-6">
           {[
-            { num: "12", label: "Years Experience" },
-            { num: "25", label: "Active Projects" },
+            { num: "5", label: "Years Experience" },
+            { num: "13", label: "Active Projects" },
             { num: "1", label: "Office Location" },
           ].map((item) => (
             <div key={item.label}>
