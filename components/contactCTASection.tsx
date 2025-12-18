@@ -16,11 +16,11 @@ export default function ContactCTASection({
   return (
     <section className="relative bg-gray-100 py-32 md:py-48 overflow-hidden">
       <div className="relative max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-left md:text-center">
-        <p className="text-2xl md:text-4xl lg:text-5xl text-neutral-500 font-semibold mb-2">
+        <p className="text-3xl md:text-4xl lg:text-5xl text-neutral-500 font-semibold mb-2">
           {eyebrow}
         </p>
 
-        <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-12 leading-tight">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-12 leading-tight">
           {title}
         </h2>
 
@@ -45,7 +45,7 @@ export default function ContactCTASection({
               <ArrowUpRight
                 className="
                   absolute inset-0
-                  translate-x-[-0.75rem] translate-y-[0.75rem]
+                  translate-x-3 translate-y-3
                   opacity-0
                   transition-all duration-300 ease-out
                   group-hover:translate-x-0 group-hover:translate-y-0

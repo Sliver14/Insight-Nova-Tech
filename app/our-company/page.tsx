@@ -89,7 +89,7 @@ export default function AboutPage() {
       <Header />
 
       {/* HERO */}
-      <section className="max-w-7xl mx-auto px-6 py-12 md:py-20 grid md:grid-cols-2 gap-16 items-center">
+      <section className="max-w-7xl mx-auto px-6 py-24 md:py-20 grid md:grid-cols-2 gap-16 items-center">
         <div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Accelerated with impact and results
@@ -106,7 +106,7 @@ export default function AboutPage() {
         <div className="relative h-[360px] rounded-xl overflow-hidden">
           <Image
             // --- UPDATED IMAGE URL ---
-            src="https://unsplash.com/photos/a-group-of-people-standing-around-a-table-with-a-laptop-qY8AWXa3Le4"
+            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY1NDl8MHwxfGFsbHwxfHxjdWx0dXJlJTIwb2ZmaWNlJTIwZGVza3N8ZW58MHx8fHwxNzA3MTMzNjcwfDA&ixlib=rb-4.0.3&q=80&w=1200"
             alt="Team meeting"
             fill
             className="object-cover"
@@ -135,7 +135,7 @@ export default function AboutPage() {
           <div className="md:col-span-2 relative h-[300px] rounded-xl overflow-hidden">
             <Image
               // --- UPDATED IMAGE URL ---
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c7c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY1NDl8MHwxfGFsbHwxfHx0ZWFtJTIwY29sbGFib3JhdGlvbiUyMGxhcmdlfGVufDB8fHx8MTcwNzEzMzYxNXww&ixlib=rb-4.0.3&q=80&w=1200"
+              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY1NDl8MHwxfGFsbHwxfHxjdWx0dXJlJTIwb2ZmaWNlJTIwZGVza3N8ZW58MHx8fHwxNzA3MTMzNjcwfDA&ixlib=rb-4.0.3&q=80&w=1200"
               alt="Team collaboration"
               fill
               className="object-cover"

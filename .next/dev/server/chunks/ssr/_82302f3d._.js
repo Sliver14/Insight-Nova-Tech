@@ -763,7 +763,7 @@ function AboutPage() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "max-w-7xl mx-auto px-6 py-12 md:py-20 grid md:grid-cols-2 gap-16 items-center",
+                className: "max-w-7xl mx-auto px-6 py-24 md:py-20 grid md:grid-cols-2 gap-16 items-center",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
@@ -801,7 +801,7 @@ function AboutPage() {
                         className: "relative h-[360px] rounded-xl overflow-hidden",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                             // --- UPDATED IMAGE URL ---
-                            src: "https://unsplash.com/photos/a-group-of-people-standing-around-a-table-with-a-laptop-qY8AWXa3Le4",
+                            src: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY1NDl8MHwxfGFsbHwxfHxjdWx0dXJlJTIwb2ZmaWNlJTIwZGVza3N8ZW58MHx8fHwxNzA3MTMzNjcwfDA&ixlib=rb-4.0.3&q=80&w=1200",
                             alt: "Team meeting",
                             fill: true,
                             className: "object-cover"
@@ -898,7 +898,7 @@ function AboutPage() {
                                 className: "md:col-span-2 relative h-[300px] rounded-xl overflow-hidden",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                     // --- UPDATED IMAGE URL ---
-                                    src: "https://images.unsplash.com/photo-1522071820081-009f0129c7c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY1NDl8MHwxfGFsbHwxfHx0ZWFtJTIwY29sbGFib3JhdGlvbiUyMGxhcmdlfGVufDB8fHx8MTcwNzEzMzYxNXww&ixlib=rb-4.0.3&q=80&w=1200",
+                                    src: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY1NDl8MHwxfGFsbHwxfHxjdWx0dXJlJTIwb2ZmaWNlJTIwZGVza3N8ZW58MHx8fHwxNzA3MTMzNjcwfDA&ixlib=rb-4.0.3&q=80&w=1200",
                                     alt: "Team collaboration",
                                     fill: true,
                                     className: "object-cover"

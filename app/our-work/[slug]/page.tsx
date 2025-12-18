@@ -86,7 +86,7 @@ export default async function ProjectDetailPage({ params }) {
               {project.techStack.map((tech) => (
                 <span
                   key={tech}
-                  className="bg-[#4D4DFF]/10 text-neutral-500 text-xs sm:text-sm md:text-sm font-medium px-3 py-1.5 rounded-full"
+                  className="bg-[#4D4DFF]/10 text-neutral-600 text-xs sm:text-sm md:text-sm font-medium px-3 py-1.5 rounded-full"
                 >
                   {tech}
                 </span>
