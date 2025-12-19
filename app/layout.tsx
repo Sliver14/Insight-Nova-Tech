@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { Poppins } from "next/font/google";
@@ -10,9 +9,6 @@ const poppins = Poppins({
   variable: "--font-poppins",
   display: "swap",
 });
-
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Insight Nova Tech - Tech Agency & Consultancy',
@@ -44,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} font-poppins`}>
+      <body className={`${poppins.variable} font-sans`}>
         {children}
         <Analytics />
       </body>
