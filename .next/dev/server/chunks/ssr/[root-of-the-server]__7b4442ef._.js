@@ -312,6 +312,41 @@ const projectsData = [
             '/doi creative/Screenshot_20251218_114524_Chrome.jpg'
         ],
         isFeatured: false
+    },
+    {
+        title: "MoneySense – Guided Finance Workbook",
+        slug: "moneysense-finance-workbook",
+        description: "A structured finance education platform designed to help young people gain clarity, build habits, and take real financial action.",
+        category: "FinTech / Financial Education",
+        projectType: "Finance Education Platform",
+        overview: "MoneySense combines guided lessons, practical workbook exercises, and community accountability to help students and young professionals move from financial confusion to confident decision-making.",
+        impact: [
+            "Simplified personal finance for beginners",
+            "Encouraged action-based money habits",
+            "Bridged the gap between learning and implementation"
+        ],
+        techStack: [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Framer Motion",
+            "PostgreSQL / Supabase"
+        ],
+        images: [
+            "/moneysense/money-sense-zeta.vercel.app_1.png",
+            "/moneysense/IMG-20251220-WA0002.jpg",
+            "/moneysense/IMG-20251220-WA0003.jpg",
+            "/moneysense/IMG-20251220-WA0004.jpg",
+            "/moneysense/IMG-20251220-WA0005.jpg",
+            "/moneysense/IMG-20251220-WA0006.jpg",
+            "/moneysense/IMG-20251220-WA0007.jpg",
+            "/moneysense/IMG-20251220-WA0008.jpg",
+            // "/moneysense/money-sense-zeta.vercel.app_.png",
+            "/moneysense/money-sense-zeta.vercel.app_2.png",
+            "/moneysense/money-sense-zeta.vercel.app_3.png",
+            "/moneysense/money-sense-zeta.vercel.app_4.png"
+        ],
+        isFeatured: true
     }
 ];
 const getProjects = ()=>projectsData;

@@ -44,25 +44,62 @@ var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$p
 ;
 ;
 const metadata = {
-    title: 'Insight Nova Tech - Tech Agency & Consultancy',
-    description: 'Innovative tech solutions, AI SaaS products, and digital transformation services for your business growth.',
-    generator: 'sylver',
-    icons: {
-        icon: [
+    title: {
+        default: "InsightNova Tech | Innovative Tech Agency, AI SaaS Solutions & Digital Consultancy",
+        template: "%s | InsightNova Tech"
+    },
+    description: "InsightNova Tech is a leading technology agency and consultancy specializing in innovative AI-powered SaaS products, custom software development, and digital transformation services to accelerate your business growth.",
+    keywords: [
+        "tech agency",
+        "technology consultancy",
+        "AI SaaS products",
+        "digital transformation services",
+        "custom software development",
+        "web development agency",
+        "mobile app development",
+        "AI solutions for business",
+        "SaaS development company",
+        "IT consulting firm"
+    ],
+    authors: [
+        {
+            name: "InsightNova Tech Team"
+        }
+    ],
+    creator: "InsightNova Tech",
+    publisher: "InsightNova Tech",
+    robots: "index, follow",
+    alternates: {
+        canonical: "https://www.insightnovatech.com"
+    },
+    openGraph: {
+        title: "InsightNova Tech – Premier Tech Agency & AI SaaS Consultancy",
+        description: "Drive business innovation with our expert tech consultancy, cutting-edge AI SaaS products, and comprehensive digital transformation solutions.",
+        url: "https://www.insightnovatech.com",
+        siteName: "InsightNova Tech",
+        images: [
             {
-                url: '/favicon-32x32.png',
-                media: '(prefers-color-scheme: light)'
-            },
-            {
-                url: '/favicon-32x32.png',
-                media: '(prefers-color-scheme: dark)'
-            },
-            {
-                url: '/public/android-chrome-512x512.png',
-                type: 'image/svg+xml'
+                url: "/og-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "InsightNova Tech - Innovative AI SaaS and Tech Consultancy"
             }
         ],
-        apple: '/favicon-32x32.png'
+        locale: "en_US",
+        type: "website"
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "InsightNova Tech | Tech Agency, AI SaaS & Digital Consultancy",
+        description: "Innovative tech solutions and AI-powered SaaS products to transform your business.",
+        images: [
+            "/twitter-image.jpg"
+        ]
+    },
+    icons: {
+        icon: "/favicon.ico",
+        shortcut: "/favicon-32x32.png",
+        apple: "/apple-touch-icon.png"
     }
 };
 function RootLayout({ children }) {
@@ -74,18 +111,18 @@ function RootLayout({ children }) {
                 children,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$vercel$2f$analytics$2f$dist$2f$next$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Analytics"], {}, void 0, false, {
                     fileName: "[project]/app/layout.tsx",
-                    lineNumber: 45,
+                    lineNumber: 79,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 43,
+            lineNumber: 77,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 42,
+        lineNumber: 76,
         columnNumber: 5
     }, this);
 }
