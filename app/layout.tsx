@@ -11,25 +11,59 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Insight Nova Tech - Tech Agency & Consultancy',
-  description: 'Innovative tech solutions, AI SaaS products, and digital transformation services for your business growth.',
-  generator: 'sylver',
-  icons: {
-    icon: [
+  title: {
+    default: "InsightNova Tech | Innovative Tech Agency, AI SaaS Solutions & Digital Consultancy",
+    template: "%s | InsightNova Tech",
+  },
+  description:
+    "InsightNova Tech is a leading technology agency and consultancy specializing in innovative AI-powered SaaS products, custom software development, and digital transformation services to accelerate your business growth.",
+  keywords: [
+    "tech agency",
+    "technology consultancy",
+    "AI SaaS products",
+    "digital transformation services",
+    "custom software development",
+    "web development agency",
+    "mobile app development",
+    "AI solutions for business",
+    "SaaS development company",
+    "IT consulting firm",
+  ],
+  authors: [{ name: "InsightNova Tech Team" }],
+  creator: "InsightNova Tech",
+  publisher: "InsightNova Tech",
+  robots: "index, follow",
+  alternates: {
+    canonical: "https://www.insightnovatech.com", // Replace with your actual domain
+  },
+  openGraph: {
+    title: "InsightNova Tech – Premier Tech Agency & AI SaaS Consultancy",
+    description:
+      "Drive business innovation with our expert tech consultancy, cutting-edge AI SaaS products, and comprehensive digital transformation solutions.",
+    url: "https://www.insightnovatech.com",
+    siteName: "InsightNova Tech",
+    images: [
       {
-        url: '/favicon-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/favicon-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/public/android-chrome-512x512.png',
-        type: 'image/svg+xml',
+        url: "/og-image.jpg", // Recommended: Add a 1200x630 branded OG image to /public
+        width: 1200,
+        height: 630,
+        alt: "InsightNova Tech - Innovative AI SaaS and Tech Consultancy",
       },
     ],
-    apple: '/favicon-32x32.png',
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "InsightNova Tech | Tech Agency, AI SaaS & Digital Consultancy",
+    description:
+      "Innovative tech solutions and AI-powered SaaS products to transform your business.",
+    images: ["/twitter-image.jpg"], // Optional: Add a separate Twitter card image
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon-32x32.png",
+    apple: "/apple-touch-icon.png",
   },
 }
 
