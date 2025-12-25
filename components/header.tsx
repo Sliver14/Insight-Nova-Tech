@@ -81,7 +81,7 @@ const Header = () => {
 
           {/* Desktop Navigation - centered */}
           <nav className="hidden lg:flex flex-1 justify-center">
-            <div className="flex items-center gap-12 xl:gap-20 text-md">
+            <div className="flex items-center gap-12 xl:gap-20 text-base md:text-md font-medium">
               <Link
                 href="/" 
                 className="hover:opacity-70 transition"

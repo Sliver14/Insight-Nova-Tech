@@ -451,7 +451,7 @@ const projectsData = [
             "/moneysense/IMG-20251220-WA0006.jpg",
             "/moneysense/IMG-20251220-WA0007.jpg",
             "/moneysense/IMG-20251220-WA0008.jpg",
-            "/moneysense/money-sense-zeta.vercel.app_.png",
+            // "/moneysense/money-sense-zeta.vercel.app_.png",
             "/moneysense/money-sense-zeta.vercel.app_2.png",
             "/moneysense/money-sense-zeta.vercel.app_3.png",
             "/moneysense/money-sense-zeta.vercel.app_4.png"

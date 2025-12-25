@@ -99,7 +99,7 @@ const Header = ()=>{
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
                             className: "hidden lg:flex flex-1 justify-center",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex items-center gap-12 xl:gap-20 text-md",
+                                className: "flex items-center gap-12 xl:gap-20 text-base md:text-md font-medium",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                         href: "/",
@@ -715,8 +715,8 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$header$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/header.tsx [app-client] (ecmascript)"); // Assuming you have a Header component matching your current site's header
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/footer.tsx [app-client] (ecmascript)"); // Assuming you have a Footer component matching your current site's footer
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$header$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/header.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/footer.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
@@ -733,27 +733,82 @@ const projectTypes = [
     'Other'
 ];
 const budgetRanges = [
-    'Less than $25k',
-    '$25k - $50k',
-    '$50k - $100k',
-    '$100k - $250k',
-    '$250k+'
+    'Less than $1k',
+    '$1k - $3k',
+    '$3k - $5k',
+    '$5k - $10k',
+    '$10k - $25k',
+    '$25k+'
 ];
 function ContactPage() {
     _s();
+    const [formData, setFormData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
+        firstName: '',
+        lastName: '',
+        email: '',
+        company: '',
+        phone: '',
+        budget: '',
+        projectType: '',
+        message: ''
+    });
+    const [isSubmitting, setIsSubmitting] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [isSubmitted, setIsSubmitted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const handleSubmit = (e)=>{
+    const handleChange = (e)=>{
+        const { name, value } = e.target;
+        setFormData((prev)=>({
+                ...prev,
+                [name]: value
+            }));
+    };
+    const validateForm = ()=>{
+        if (!formData.firstName || !formData.lastName || !formData.email || !formData.projectType || !formData.message) {
+            setError('Please fill out all required fields.');
+            return false;
+        }
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(formData.email)) {
+            setError('Please enter a valid email address.');
+            return false;
+        }
+        setError(null);
+        return true;
+    };
+    const handleSubmit = async (e)=>{
         e.preventDefault();
-        // Add your form validation and API submission logic here
-        // e.g., fetch('/api/submit-project', { method: 'POST', body: new FormData(e.target) })
-        setIsSubmitted(true);
+        if (!validateForm()) {
+            return;
+        }
+        setIsSubmitting(true);
+        setError(null);
+        try {
+            const response = await fetch('/api/project-inquiry', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+            if (response.ok) {
+                setIsSubmitted(true);
+            } else {
+                const errorData = await response.json();
+                setError(errorData.message || 'Something went wrong. Please try again later.');
+            }
+        } catch (err) {
+            setError('Something went wrong. Please try again later.');
+            console.error('Submission error:', err);
+        } finally{
+            setIsSubmitting(false);
+        }
     };
     if (isSubmitted) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$header$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/app/start-project/page.tsx",
-                    lineNumber: 29,
+                    lineNumber: 86,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -772,12 +827,12 @@ function ContactPage() {
                                 d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                             }, void 0, false, {
                                 fileName: "[project]/app/start-project/page.tsx",
-                                lineNumber: 32,
+                                lineNumber: 89,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/start-project/page.tsx",
-                            lineNumber: 31,
+                            lineNumber: 88,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -785,7 +840,7 @@ function ContactPage() {
                             children: "Thank You!"
                         }, void 0, false, {
                             fileName: "[project]/app/start-project/page.tsx",
-                            lineNumber: 34,
+                            lineNumber: 91,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -793,18 +848,18 @@ function ContactPage() {
                             children: "We've received your inquiry. A member of our team will reach out within 24 hours to discuss your project."
                         }, void 0, false, {
                             fileName: "[project]/app/start-project/page.tsx",
-                            lineNumber: 35,
+                            lineNumber: 92,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/start-project/page.tsx",
-                    lineNumber: 30,
+                    lineNumber: 87,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/app/start-project/page.tsx",
-                    lineNumber: 37,
+                    lineNumber: 94,
                     columnNumber: 9
                 }, this)
             ]
@@ -814,31 +869,31 @@ function ContactPage() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$header$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/start-project/page.tsx",
-                lineNumber: 44,
+                lineNumber: 101,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-                className: "max-w-4xl mx-auto mt-24 py-16 px-4",
+                className: "max-w-4xl mx-auto mt-12 md:mt-24 px-4 sm:px-6 py-12 md:py-16",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "text-5xl font-extrabold text-gray-900 mb-4 text-center",
-                        children: "Let's Connect!"
+                        className: "text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-[#1A1A1A] mb-4 text-center",
+                        children: "Let’s Connect"
                     }, void 0, false, {
                         fileName: "[project]/app/start-project/page.tsx",
-                        lineNumber: 46,
+                        lineNumber: 103,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-xl text-gray-600 mb-12 text-center",
-                        children: "Tell us about your project. We'll review your details and get back to you within 24 hours to discuss next steps."
+                        className: "text-sm sm:text-base md:text-lg text-[#666666] mb-10 md:mb-12 text-center max-w-2xl mx-auto",
+                        children: "Tell us about your project. We’ll review your details and get back to you within 24 hours."
                     }, void 0, false, {
                         fileName: "[project]/app/start-project/page.tsx",
-                        lineNumber: 47,
+                        lineNumber: 107,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                         onSubmit: handleSubmit,
-                        className: "space-y-8 bg-white p-8 md:p-12 rounded-xl shadow-2xl border border-gray-100",
+                        className: "space-y-8 bg-white p-6 sm:p-8 md:p-10 rounded-xl shadow-xl border border-gray-100",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "grid grid-cols-1 md:grid-cols-2 gap-6",
@@ -847,45 +902,53 @@ function ContactPage() {
                                         label: "First Name",
                                         type: "text",
                                         name: "firstName",
-                                        required: true
+                                        required: true,
+                                        value: formData.firstName,
+                                        onChange: handleChange
                                     }, void 0, false, {
                                         fileName: "[project]/app/start-project/page.tsx",
-                                        lineNumber: 54,
+                                        lineNumber: 117,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Input, {
                                         label: "Last Name",
                                         type: "text",
                                         name: "lastName",
-                                        required: true
+                                        required: true,
+                                        value: formData.lastName,
+                                        onChange: handleChange
                                     }, void 0, false, {
                                         fileName: "[project]/app/start-project/page.tsx",
-                                        lineNumber: 55,
+                                        lineNumber: 118,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Input, {
                                         label: "Email Address",
                                         type: "email",
                                         name: "email",
-                                        required: true
+                                        required: true,
+                                        value: formData.email,
+                                        onChange: handleChange
                                     }, void 0, false, {
                                         fileName: "[project]/app/start-project/page.tsx",
-                                        lineNumber: 56,
+                                        lineNumber: 119,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Input, {
                                         label: "Company / Website (Optional)",
                                         type: "text",
-                                        name: "company"
+                                        name: "company",
+                                        value: formData.company,
+                                        onChange: handleChange
                                     }, void 0, false, {
                                         fileName: "[project]/app/start-project/page.tsx",
-                                        lineNumber: 57,
+                                        lineNumber: 120,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/start-project/page.tsx",
-                                lineNumber: 53,
+                                lineNumber: 116,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -894,35 +957,41 @@ function ContactPage() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Input, {
                                         label: "Phone Number (Optional)",
                                         type: "tel",
-                                        name: "phone"
+                                        name: "phone",
+                                        value: formData.phone,
+                                        onChange: handleChange
                                     }, void 0, false, {
                                         fileName: "[project]/app/start-project/page.tsx",
-                                        lineNumber: 62,
+                                        lineNumber: 124,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Select, {
                                         label: "Budget Range",
                                         name: "budget",
-                                        options: budgetRanges
+                                        options: budgetRanges,
+                                        value: formData.budget,
+                                        onChange: handleChange
                                     }, void 0, false, {
                                         fileName: "[project]/app/start-project/page.tsx",
-                                        lineNumber: 63,
+                                        lineNumber: 125,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/start-project/page.tsx",
-                                lineNumber: 61,
+                                lineNumber: 123,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Select, {
                                 label: "Type of Project",
                                 name: "projectType",
                                 options: projectTypes,
-                                required: true
+                                required: true,
+                                value: formData.projectType,
+                                onChange: handleChange
                             }, void 0, false, {
                                 fileName: "[project]/app/start-project/page.tsx",
-                                lineNumber: 66,
+                                lineNumber: 128,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -937,13 +1006,13 @@ function ContactPage() {
                                                 children: "*"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/start-project/page.tsx",
-                                                lineNumber: 70,
+                                                lineNumber: 132,
                                                 columnNumber: 23
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/start-project/page.tsx",
-                                        lineNumber: 69,
+                                        lineNumber: 131,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -951,63 +1020,76 @@ function ContactPage() {
                                         name: "message",
                                         rows: 6,
                                         placeholder: "Tell us about your project. What problems can we help you solve?",
-                                        className: "w-full border border-gray-300 rounded-lg p-4 focus:ring-indigo-500 focus:border-indigo-500 transition duration-200 resize-none text-lg",
-                                        required: true
+                                        required: true,
+                                        value: formData.message,
+                                        onChange: handleChange,
+                                        className: "   w-full rounded-lg border border-gray-300   px-3 py-3   text-sm sm:text-base   text-[#1A1A1A]   placeholder:text-gray-400   focus:placeholder:text-gray-300   focus:ring-indigo-500 focus:border-indigo-500   resize-none   transition   "
                                     }, void 0, false, {
                                         fileName: "[project]/app/start-project/page.tsx",
-                                        lineNumber: 72,
+                                        lineNumber: 134,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/start-project/page.tsx",
-                                lineNumber: 68,
+                                lineNumber: 130,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "pt-4",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    type: "submit",
-                                    className: "w-full bg-gray-900 text-white text-xl font-bold py-4 rounded-full    hover:bg-gray-800 transition duration-300 shadow-xl",
-                                    children: "Submit Inquiry"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/start-project/page.tsx",
-                                    lineNumber: 84,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
+                                children: [
+                                    error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "mb-4 text-center text-red-600 bg-red-100 p-3 rounded-lg",
+                                        children: error
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/start-project/page.tsx",
+                                        lineNumber: 159,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        type: "submit",
+                                        disabled: isSubmitting,
+                                        className: "w-full bg-gray-900 cursor-pointer text-white text-xl font-bold py-4 rounded-full    hover:bg-gray-800 transition duration-300 shadow-xl   disabled:bg-gray-400 disabled:cursor-not-allowed",
+                                        children: isSubmitting ? 'Submitting...' : 'Submit Inquiry'
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/start-project/page.tsx",
+                                        lineNumber: 163,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/app/start-project/page.tsx",
-                                lineNumber: 83,
+                                lineNumber: 157,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/start-project/page.tsx",
-                        lineNumber: 51,
-                        columnNumber: 9
+                        lineNumber: 112,
+                        columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/start-project/page.tsx",
-                lineNumber: 45,
+                lineNumber: 102,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/start-project/page.tsx",
-                lineNumber: 94,
+                lineNumber: 175,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
-_s(ContactPage, "y0UBtSRcKf2AGGJv1w8GuwACgkA=");
+_s(ContactPage, "5dmo/lOtWh04jg2J3hmqTohihg8=");
 _c = ContactPage;
 // Reusable Input Component
-const Input = ({ label, type, name, required })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+const Input = ({ label, type, name, value, onChange, required, placeholder })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                 htmlFor: name,
-                className: "block text-lg font-medium text-gray-900 mb-2",
+                className: "block text-sm sm:text-base font-medium text-[#1A1A1A] mb-2",
                 children: [
                     label,
                     " ",
@@ -1016,13 +1098,13 @@ const Input = ({ label, type, name, required })=>/*#__PURE__*/ (0, __TURBOPACK__
                         children: "*"
                     }, void 0, false, {
                         fileName: "[project]/app/start-project/page.tsx",
-                        lineNumber: 103,
+                        lineNumber: 203,
                         columnNumber: 28
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/start-project/page.tsx",
-                lineNumber: 102,
+                lineNumber: 199,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1030,25 +1112,28 @@ const Input = ({ label, type, name, required })=>/*#__PURE__*/ (0, __TURBOPACK__
                 id: name,
                 name: name,
                 required: required,
-                className: "w-full border border-gray-300 rounded-lg p-3 focus:ring-indigo-500 focus:border-indigo-500 transition duration-200 text-lg"
+                value: value,
+                onChange: onChange,
+                placeholder: placeholder,
+                className: "   w-full rounded-lg border border-gray-300   px-3 py-2.5   text-sm sm:text-base   text-[#1A1A1A]   placeholder:text-gray-400   focus:placeholder:text-gray-300   focus:ring-indigo-500 focus:border-indigo-500   transition   "
             }, void 0, false, {
                 fileName: "[project]/app/start-project/page.tsx",
-                lineNumber: 105,
+                lineNumber: 206,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/app/start-project/page.tsx",
-        lineNumber: 101,
+        lineNumber: 198,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 _c1 = Input;
 // Reusable Select Component
-const Select = ({ label, name, options, required })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+const Select = ({ label, name, options, value, onChange, required })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                 htmlFor: name,
-                className: "block text-lg font-medium text-gray-900 mb-2",
+                className: "block text-sm sm:text-base font-medium text-[#1A1A1A] mb-2",
                 children: [
                     label,
                     " ",
@@ -1057,29 +1142,30 @@ const Select = ({ label, name, options, required })=>/*#__PURE__*/ (0, __TURBOPA
                         children: "*"
                     }, void 0, false, {
                         fileName: "[project]/app/start-project/page.tsx",
-                        lineNumber: 119,
+                        lineNumber: 250,
                         columnNumber: 28
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/start-project/page.tsx",
-                lineNumber: 118,
+                lineNumber: 246,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
                 id: name,
                 name: name,
                 required: required,
-                defaultValue: "",
-                className: "w-full border border-gray-300 rounded-lg p-3 focus:ring-indigo-500 focus:border-indigo-500 transition duration-200 text-lg bg-white",
+                value: value,
+                onChange: onChange,
+                className: "   w-full rounded-lg border border-gray-300   px-3 py-2.5   text-sm sm:text-base   text-[#1A1A1A]   bg-white   focus:ring-indigo-500 focus:border-indigo-500   transition   ",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                         value: "",
                         disabled: true,
-                        children: "Please select..."
+                        children: "Please select…"
                     }, void 0, false, {
                         fileName: "[project]/app/start-project/page.tsx",
-                        lineNumber: 128,
+                        lineNumber: 269,
                         columnNumber: 7
                     }, ("TURBOPACK compile-time value", void 0)),
                     options.map((option)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1087,19 +1173,19 @@ const Select = ({ label, name, options, required })=>/*#__PURE__*/ (0, __TURBOPA
                             children: option
                         }, option, false, {
                             fileName: "[project]/app/start-project/page.tsx",
-                            lineNumber: 130,
+                            lineNumber: 273,
                             columnNumber: 9
                         }, ("TURBOPACK compile-time value", void 0)))
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/start-project/page.tsx",
-                lineNumber: 121,
+                lineNumber: 253,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/app/start-project/page.tsx",
-        lineNumber: 117,
+        lineNumber: 245,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 _c2 = Select;

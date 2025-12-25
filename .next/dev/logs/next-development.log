@@ -1,21 +1,299 @@
-[00:00:02.303] Server  LOG      ✓ Ready in 1649ms
-[00:00:08.634] Server  LOG      ○ Compiling / ...
-[00:00:08.958] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
-[00:00:09.452] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:09.793] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:09.793] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:09.793] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766237574190}
-[00:00:09.843] Browser WARN    Image with src "http://localhost:3000/67dc898397506cafcebc181f_visualelectric-1742506359313.avif" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
-[00:00:15.635] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766237580112}
-[00:00:29.010] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work/moneysense-finance-workbook color: rgb(120, 120, 120) color: inherit {"dp":"/our-work/[slug]","o":"http://localhost:3000/our-work/moneysense-finance-workbook","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766237593483}
-[00:06:06.145] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
-[00:06:06.370] Server  LOG      ✓ Compiled in 363ms
-[00:06:41.629] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
-[00:06:41.636] Server  LOG      ✓ Compiled in 295ms
-[00:07:47.940] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:07:48.111] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:07:48.111] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/our-work/moneysense-finance-workbook","route":"/our-work/[slug]"}
-[00:07:48.111] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work/moneysense-finance-workbook color: rgb(120, 120, 120) color: inherit {"dp":"/our-work/[slug]","o":"http://localhost:3000/our-work/moneysense-finance-workbook","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766238032581}
-[00:07:48.297] Browser WARN    Image with src "/moneysense/money-sense-zeta.vercel.app_1.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:08:30.539] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:00:01.319] Server  LOG      ✓ Ready in 879ms
+[00:00:04.265] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:00:04.655] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:04.850] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:04.850] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/start-project","route":"/start-project"}
+[00:00:04.850] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/start-project color: rgb(120, 120, 120) color: inherit {"dp":"/start-project","o":"http://localhost:3000/start-project","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766591959602}
+[00:00:06.883] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766591961637}
+[00:00:07.075] Browser WARN    Image with src "http://localhost:3000/67dc898397506cafcebc181f_visualelectric-1742506359313.avif" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:00:09.242] Server  ERROR    ⨯ ./app/our-company/page.tsx:291:42
+Parsing ecmascript source code failed
+  289 |
+  290 |       {/* BIG SECTION HEADER COMPONENT */}
+> 291 |       const SectionHeader = ({ title }) => (
+      |                                          ^
+  292 |         <div className="py-20 overflow-hidden">
+  293 |           <h2 className="text-[12vw] font-bold leading-none uppercase tracking-tighter text-transparent border-text stroke-white" 
+  294 |               style={{ WebkitTextStroke: '2px rgba(255,255,255,0.1)' }}>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+
+[00:00:09.355] Browser ERROR   ./app/our-company/page.tsx:291:42
+Parsing ecmascript source code failed
+  289 |
+  290 |       {/* BIG SECTION HEADER COMPONENT */}
+> 291 |       const SectionHeader = ({ title }) => (
+      |                                          ^
+  292 |         <div className="py-20 overflow-hidden">
+  293 |           <h2 className="text-[12vw] font-bold leading-none uppercase tracking-tighter text-transparent border-text stroke-white" 
+  294 |               style={{ WebkitTextStroke: '2px rgba(255,255,255,0.1)' }}>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[00:00:09.957] Browser ERROR   ./app/our-company/page.tsx:291:42
+Parsing ecmascript source code failed
+  289 |
+  290 |       {/* BIG SECTION HEADER COMPONENT */}
+> 291 |       const SectionHeader = ({ title }) => (
+      |                                          ^
+  292 |         <div className="py-20 overflow-hidden">
+  293 |           <h2 className="text-[12vw] font-bold leading-none uppercase tracking-tighter text-transparent border-text stroke-white" 
+  294 |               style={{ WebkitTextStroke: '2px rgba(255,255,255,0.1)' }}>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[00:00:09.957] Browser ERROR   ./app/our-company/page.tsx:291:42
+Parsing ecmascript source code failed
+  289 |
+  290 |       {/* BIG SECTION HEADER COMPONENT */}
+> 291 |       const SectionHeader = ({ title }) => (
+      |                                          ^
+  292 |         <div className="py-20 overflow-hidden">
+  293 |           <h2 className="text-[12vw] font-bold leading-none uppercase tracking-tighter text-transparent border-text stroke-white" 
+  294 |               style={{ WebkitTextStroke: '2px rgba(255,255,255,0.1)' }}>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[00:00:10.296] Server  ERROR    ⨯ ./app/our-company/page.tsx:291:42
+Parsing ecmascript source code failed
+  289 |
+  290 |       {/* BIG SECTION HEADER COMPONENT */}
+> 291 |       const SectionHeader = ({ title }) => (
+      |                                          ^
+  292 |         <div className="py-20 overflow-hidden">
+  293 |           <h2 className="text-[12vw] font-bold leading-none uppercase tracking-tighter text-transparent border-text stroke-white" 
+  294 |               style={{ WebkitTextStroke: '2px rgba(255,255,255,0.1)' }}>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+
+[00:00:10.457] Browser ERROR   uncaughtError: Error: ./app/our-company/page.tsx:291:42
+Parsing ecmascript source code failed
+  289 |
+  290 |       {/* BIG SECTION HEADER COMPONENT */}
+> 291 |       const SectionHeader = ({ title }) => (
+      |                                          ^
+  292 |         <div className="py-20 overflow-hidden">
+  293 |           <h2 className="text-[12vw] font-bold leading-none uppercase tracking-tighter text-transparent border-text stroke-white" 
+  294 |               style={{ WebkitTextStroke: '2px rgba(255,255,255,0.1)' }}>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+
+[00:00:10.631] Browser ERROR   ./app/our-company/page.tsx:291:42
+Parsing ecmascript source code failed
+  289 |
+  290 |       {/* BIG SECTION HEADER COMPONENT */}
+> 291 |       const SectionHeader = ({ title }) => (
+      |                                          ^
+  292 |         <div className="py-20 overflow-hidden">
+  293 |           <h2 className="text-[12vw] font-bold leading-none uppercase tracking-tighter text-transparent border-text stroke-white" 
+  294 |               style={{ WebkitTextStroke: '2px rgba(255,255,255,0.1)' }}>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[00:00:10.631] Browser ERROR   ./app/our-company/page.tsx:291:42
+Parsing ecmascript source code failed
+  289 |
+  290 |       {/* BIG SECTION HEADER COMPONENT */}
+> 291 |       const SectionHeader = ({ title }) => (
+      |                                          ^
+  292 |         <div className="py-20 overflow-hidden">
+  293 |           <h2 className="text-[12vw] font-bold leading-none uppercase tracking-tighter text-transparent border-text stroke-white" 
+  294 |               style={{ WebkitTextStroke: '2px rgba(255,255,255,0.1)' }}>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[00:01:22.864] Server  LOG      ✓ Compiled in 122ms
+[00:01:23.140] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:01:23.526] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:25.277] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:01:25.277] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/our-company","route":"/our-company"}
+[00:01:25.277] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766592039359}
+[00:02:29.686] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:29.686] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:02:29.686] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/our-company","route":"/our-company"}
+[00:02:29.686] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766592104534}
+[00:14:12.190] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-services color: rgb(120, 120, 120) color: inherit {"dp":"/our-services","o":"http://localhost:3000/our-services","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766592806941}
+[00:17:00.373] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:17:00.379] Server  LOG      ✓ Compiled in 195ms
+[00:18:58.041] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:58.279] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:18:58.280] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/insightnova","route":"/insightnova"}
+[00:18:58.280] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/insightnova color: rgb(120, 120, 120) color: inherit {"dp":"/insightnova","o":"http://localhost:3000/insightnova","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766593092999}
+[00:19:00.381] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:00.647] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:19:00.647] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/our-services","route":"/our-services"}
+[00:19:00.647] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-services color: rgb(120, 120, 120) color: inherit {"dp":"/our-services","o":"http://localhost:3000/our-services","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766593095402}
+[00:21:21.902] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766593236654}
+[00:21:30.422] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-services color: rgb(120, 120, 120) color: inherit {"dp":"/our-services","o":"http://localhost:3000/our-services","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766593245175}
+[00:21:33.032] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766593247780}
+[00:21:35.135] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766593249855}
+[00:21:35.135] Browser WARN    Image with src "http://localhost:3000/67dc898397506cafcebc181f_visualelectric-1742506359313.avif" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[00:25:21.467] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766593476164}
+[00:25:24.160] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-services color: rgb(120, 120, 120) color: inherit {"dp":"/our-services","o":"http://localhost:3000/our-services","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766593478909}
+[04:23:38.210] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607774328}
+[04:23:43.879] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607780001}
+[04:23:52.501] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607788620}
+[04:26:20.113] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-services color: rgb(120, 120, 120) color: inherit {"dp":"/our-services","o":"http://localhost:3000/our-services","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607936238}
+[04:26:23.467] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607939533}
+[04:26:26.411] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607942539}
+[04:26:27.308] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607943357}
+[04:26:30.545] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-services color: rgb(120, 120, 120) color: inherit {"dp":"/our-services","o":"http://localhost:3000/our-services","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607946668}
+[04:26:31.758] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607947821}
+[04:26:33.258] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607949375}
+[04:26:34.623] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607950741}
+[04:26:35.712] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-services color: rgb(120, 120, 120) color: inherit {"dp":"/our-services","o":"http://localhost:3000/our-services","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607951833}
+[04:26:36.657] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607952779}
+[04:26:38.095] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-services color: rgb(120, 120, 120) color: inherit {"dp":"/our-services","o":"http://localhost:3000/our-services","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607954215}
+[04:26:39.635] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607955734}
+[04:26:40.682] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607956806}
+[04:26:42.188] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607958267}
+[04:26:43.561] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-services color: rgb(120, 120, 120) color: inherit {"dp":"/our-services","o":"http://localhost:3000/our-services","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607959675}
+[04:26:44.729] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607960852}
+[04:26:45.945] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-services color: rgb(120, 120, 120) color: inherit {"dp":"/our-services","o":"http://localhost:3000/our-services","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607962071}
+[04:26:47.048] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607963106}
+[04:26:48.207] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607964329}
+[04:26:49.283] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607965386}
+[04:26:53.776] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607969904}
+[04:26:54.842] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607970940}
+[04:26:55.962] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-services color: rgb(120, 120, 120) color: inherit {"dp":"/our-services","o":"http://localhost:3000/our-services","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607972086}
+[04:26:57.172] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607973291}
+[04:26:58.763] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/start-project color: rgb(120, 120, 120) color: inherit {"dp":"/start-project","o":"http://localhost:3000/start-project","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766607974886}
+[04:28:02.364] Server  LOG      ✓ Compiled in 167ms
+[04:28:10.493] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766608046619}
+[04:28:12.921] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766608049017}
+[04:46:58.830] Server  LOG      ✓ Compiled in 166ms
+[04:47:48.196] Server  LOG      ✓ Compiled in 229ms
+[04:48:09.401] Server  LOG      ✓ Compiled in 218ms
+[04:48:33.044] Server  LOG      ✓ Compiled in 172ms
+[04:48:46.668] Server  LOG      ✓ Compiled in 159ms
+[04:49:08.130] Server  LOG      ✓ Compiled in 175ms
+[04:49:35.986] Server  LOG      ✓ Compiled in 162ms
+[04:49:47.662] Server  LOG      ✓ Compiled in 161ms
+[04:50:14.317] Server  LOG      ✓ Compiled in 171ms
+[04:50:21.980] Server  LOG      ✓ Compiled in 162ms
+[04:50:28.680] Server  LOG      ✓ Compiled in 197ms
+[04:50:38.667] Server  LOG      ✓ Compiled in 199ms
+[05:00:22.933] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766609979048}
+[05:00:25.046] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[05:00:25.220] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766609981334}
+[05:00:26.381] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-services color: rgb(120, 120, 120) color: inherit {"dp":"/our-services","o":"http://localhost:3000/our-services","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766609982502}
+[05:00:27.570] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766609983690}
+[05:00:29.451] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766609985572}
+[05:00:31.019] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766609987140}
+[05:00:32.802] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-services color: rgb(120, 120, 120) color: inherit {"dp":"/our-services","o":"http://localhost:3000/our-services","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766609988929}
+[05:00:34.283] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-work color: rgb(120, 120, 120) color: inherit {"dp":"/our-work","o":"http://localhost:3000/our-work","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766609990403}
+[05:01:17.034] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766610033158}
+[05:01:21.201] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766610037323}
+[05:01:56.019] Server  LOG      ✓ Compiled in 174ms
+[05:02:32.700] Server  LOG      ✓ Compiled in 162ms
+[05:02:43.420] Server  LOG      ✓ Compiled in 236ms
+[05:02:59.831] Server  LOG      ✓ Compiled in 192ms
+[05:03:38.868] Server  LOG      ✓ Compiled in 197ms
+[05:03:51.848] Server  LOG      ✓ Compiled in 155ms
+[05:04:40.980] Server  LOG      ✓ Compiled in 162ms
+[05:04:48.652] Server  LOG      ✓ Compiled in 190ms
+[05:06:20.135] Server  LOG      ✓ Compiled in 237ms
+[05:06:31.299] Server  LOG      ✓ Compiled in 182ms
+[05:06:39.520] Server  LOG      ✓ Compiled in 207ms
+[05:06:47.484] Server  LOG      ✓ Compiled in 185ms
+[05:07:03.319] Server  LOG      ✓ Compiled in 200ms
+[05:07:10.858] Server  LOG      ✓ Compiled in 198ms
+[05:07:31.601] Server  LOG      ✓ Compiled in 157ms
+[05:07:43.387] Server  LOG      ✓ Compiled in 154ms
+[05:07:49.369] Server  LOG      ✓ Compiled in 169ms
+[05:07:59.318] Server  LOG      ✓ Compiled in 236ms
+[05:08:04.637] Server  LOG      ✓ Compiled in 255ms
+[05:08:19.539] Server  LOG      ✓ Compiled in 158ms
+[05:08:39.968] Server  LOG      ✓ Compiled in 211ms
+[05:08:44.568] Server  LOG      ✓ Compiled in 205ms
+[05:09:32.719] Server  LOG      ✓ Compiled in 203ms
+[05:09:38.885] Server  LOG      ✓ Compiled in 173ms
+[05:09:44.035] Server  LOG      ✓ Compiled in 193ms
+[05:11:07.135] Server  LOG      ✓ Compiled in 171ms
+[05:11:13.752] Server  LOG      ✓ Compiled in 159ms
+[05:22:23.971] Server  LOG      ✓ Compiled in 958ms
+[05:23:11.104] Server  LOG      ✓ Compiled in 198ms
+[05:23:48.744] Server  LOG      ✓ Compiled in 190ms
+[05:23:49.280] Browser ERROR   uncaughtError: Error: Expected ref to be a function, an object returned by React.createRef(), or undefined/null.
+[05:26:25.544] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[05:26:25.784] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[05:26:25.920] Server  LOG      ✓ Compiled in 179ms
+[05:26:26.297] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:26:26.922] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[05:26:26.922] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/our-company","route":"/our-company"}
+[05:26:26.922] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766611542665}
+[05:36:43.592] Server  LOG      ✓ Compiled in 180ms
+[05:38:16.091] Server  LOG      ✓ Compiled in 191ms
+[05:49:55.006] Server  LOG      ✓ Compiled in 172ms
+[05:50:10.772] Server  LOG      ✓ Compiled in 189ms
+[05:50:22.460] Server  LOG      ✓ Compiled in 206ms
+[05:50:42.407] Server  LOG      ✓ Compiled in 199ms
+[05:50:59.062] Server  LOG      ✓ Compiled in 194ms
+[05:51:06.004] Server  LOG      ✓ Compiled in 204ms
+[05:51:29.104] Server  LOG      ✓ Compiled in 193ms
+[05:51:37.246] Server  LOG      ✓ Compiled in 196ms
+[05:51:56.526] Server  LOG      ✓ Compiled in 186ms
+[05:52:13.640] Server  LOG      ✓ Compiled in 194ms
+[05:52:24.471] Server  LOG      ✓ Compiled in 197ms
+[05:52:53.901] Server  LOG      ✓ Compiled in 181ms
+[05:53:14.573] Server  LOG      ✓ Compiled in 209ms
+[05:53:28.489] Server  LOG      ✓ Compiled in 271ms
+[05:53:36.160] Server  LOG      ✓ Compiled in 215ms
+[05:53:41.179] Server  LOG      ✓ Compiled in 221ms
+[05:53:46.140] Server  LOG      ✓ Compiled in 216ms
+[05:53:57.675] Server  LOG      ✓ Compiled in 243ms
+[05:59:28.473] Server  LOG      ✓ Compiled in 225ms
+[05:59:39.894] Server  LOG      ✓ Compiled in 235ms
+[06:00:45.593] Server  LOG      ✓ Compiled in 239ms
+[06:02:16.707] Server  LOG      ✓ Compiled in 177ms
+[06:03:14.309] Server  LOG      ✓ Compiled in 231ms
+[06:03:22.151] Server  LOG      ✓ Compiled in 230ms
+[06:03:35.907] Server  LOG      ✓ Compiled in 205ms
+[06:03:58.198] Server  LOG      ✓ Compiled in 195ms
+[06:04:27.115] Server  LOG      ✓ Compiled in 177ms
+[06:04:33.337] Server  LOG      ✓ Compiled in 230ms
+[06:04:43.797] Server  LOG      ✓ Compiled in 203ms
+[06:04:49.828] Server  LOG      ✓ Compiled in 195ms
+[06:05:02.325] Server  LOG      ✓ Compiled in 164ms
+[06:05:14.242] Server  LOG      ✓ Compiled in 244ms
+[06:05:31.357] Server  LOG      ✓ Compiled in 240ms
+[06:05:38.990] Server  LOG      ✓ Compiled in 242ms
+[06:09:43.675] Server  LOG      ✓ Compiled in 175ms
+[06:09:59.410] Server  LOG      ✓ Compiled in 195ms
+[06:10:14.023] Server  LOG      ✓ Compiled in 184ms
+[06:10:47.742] Server  LOG      ✓ Compiled in 189ms
+[06:11:02.427] Server  LOG      ✓ Compiled in 198ms
+[06:11:27.942] Server  LOG      ✓ Compiled in 171ms
+[06:11:35.643] Server  LOG      ✓ Compiled in 203ms
+[06:17:10.345] Server  LOG      ✓ Compiled in 210ms
+[06:17:59.626] Server  LOG      ✓ Compiled in 226ms
+[06:18:42.094] Server  LOG      ✓ Compiled in 189ms
+[06:19:07.010] Server  LOG      ✓ Compiled in 232ms
+[06:19:33.912] Server  LOG      ✓ Compiled in 186ms
+[06:19:46.960] Server  LOG      ✓ Compiled in 187ms
+[06:19:56.327] Server  LOG      ✓ Compiled in 211ms
+[06:21:18.295] Server  LOG      ✓ Compiled in 202ms
+[06:21:35.394] Server  LOG      ✓ Compiled in 196ms
+[06:21:45.453] Server  LOG      ✓ Compiled in 266ms
+[06:22:06.697] Server  LOG      ✓ Compiled in 184ms
+[06:22:22.077] Server  LOG      ✓ Compiled in 259ms
+[06:22:29.891] Server  LOG      ✓ Compiled in 202ms
+[06:25:43.883] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-services color: rgb(120, 120, 120) color: inherit {"dp":"/our-services","o":"http://localhost:3000/our-services","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766615099998}
+[06:51:47.684] Server  LOG      ✓ Compiled in 418ms
+[06:52:36.177] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[06:52:36.362] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766616712481}
+[06:53:47.285] Server  LOG      ✓ Compiled in 190ms
+[06:54:42.139] Server  LOG      ✓ Compiled in 216ms
+[06:55:00.575] Server  LOG      ✓ Compiled in 362ms
+[06:56:19.447] Server  LOG      ✓ Compiled in 201ms
+[06:57:36.656] Server  LOG      ✓ Compiled in 232ms
+[06:57:44.668] Server  LOG      ✓ Compiled in 275ms
+[07:00:50.153] Server  LOG      ✓ Compiled in 211ms
+[07:00:55.508] Server  LOG      ✓ Compiled in 173ms
+[07:01:17.203] Server  LOG      ✓ Compiled in 314ms
+[07:01:36.187] Server  LOG      ✓ Compiled in 244ms
+[07:01:44.733] Server  LOG      ✓ Compiled in 240ms
+[07:02:26.221] Server  LOG      ✓ Compiled in 230ms
+[07:38:12.677] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[07:38:12.847] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-services color: rgb(120, 120, 120) color: inherit {"dp":"/our-services","o":"http://localhost:3000/our-services","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766619448962}
+[07:39:29.628] Server  WARN     ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[07:39:29.793] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-company color: rgb(120, 120, 120) color: inherit {"dp":"/our-company","o":"http://localhost:3000/our-company","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766619525912}
+[10:55:56.707] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/our-services color: rgb(120, 120, 120) color: inherit {"dp":"/our-services","o":"http://localhost:3000/our-services","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1766631312818}

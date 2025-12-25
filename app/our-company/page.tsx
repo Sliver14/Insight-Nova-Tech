@@ -5,239 +5,129 @@ import Image from "next/image";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
-// --- START: UPDATED teamData with working image URLs ---
 const teamData = [
-  {
-    id: 1,
-    name: "Sylver",
-    title: "CEO, Lead Dev",
-    image: "/sylver potrait.png",
-  },
-  // {
-  //   id: 2,
-  //   name: "Sarah",
-  //   title: "Lead Dev",
-  //   image: "https://images.unsplash.com/photo-1557862921-37829c790f19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY1NDl8MHwxfGFsbHw4fHxjbGVhbiUyMHByb2ZpbGUlMjBwb3J0cmFpdCUyMHBvcnRyYWl0fGVufDB8fHx8MTcwNzEzMzQ4OXww&ixlib=rb-4.0.3&q=80&w=200",
-  // },
-  // {
-  //   id: 3,
-  //   name: "Max",
-  //   title: "Designer",
-  //   image: "https://images.unsplash.com/photo-1507003211169-0a812d36c534?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY1NDl8MHwxfGFsbHwzfHxjbGVhbiUyMHByb2ZpbGUlMjBwb3J0cmFpdCUyMHBvcnRyYWl0fGVufDB8fHx8MTcwNzEzMzQ4OXww&ixlib=rb-4.0.3&q=80&w=200",
-  // },
-  // {
-  //   id: 4,
-  //   name: "Jens",
-  //   title: "PM",
-  //   image: "https://images.unsplash.com/photo-1568602471926-89d812328400?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY1NDl8MHwxfGFsbHw0fHxjbGVhbiUyMHByb2ZpbGUlMjBwb3J0cmFpdCUyMHBvcnRyYWl0fGVufDB8fHx8MTcwNzEzMzQ4OXww&ixlib=rb-4.0.3&q=80&w=200",
-  // },
-  // {
-  //   id: 5,
-  //   name: "Lia",
-  //   title: "Copywriter",
-  //   image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY1NDl8MHwxfGFsbHw1fHxjbGVhbiUyMHByb2ZpbGUlMjBwb3J0cmFpdCUyMHBvcnRyYWl0fGVufDB8fHx8MTcwNzEzMzQ4OXww&ixlib=rb-4.0.3&q=80&w=200",
-  // },
-  // {
-  //   id: 6,
-  //   name: "Ben",
-  //   title: "Engineer",
-  //   image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY1NDl8MHwxfGFsbHw2fHxjbGVhbiUyMHByb2ZpbGUlMjBwb3J0cmFpdCUyMHBvcnRyYWl0fGVufDB8fHx8MTcwNzEzMzQ4OXww&ixlib=rb-4.0.3&q=80&w=200",
-  // },
-  // {
-  //   id: 7,
-  //   name: "Eva",
-  //   title: "Analyst",
-  //   image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY1NDl8MHwxfGFsbHw3fHxjbGVhbiUyMHByb2ZpbGUlMjBwb3J0cmFpdCUyMHBvcnRyYWl0fGVufDB8fHx8MTcwNzEzMzQ4OXww&ixlib=rb-4.0.3&q=80&w=200",
-  // },
-  // {
-  //   id: 8,
-  //   name: "Toby",
-  //   title: "QA",
-  //   image: "https://images.unsplash.com/photo-1557862921-37829c790f19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY1NDl8MHwxfGFsbHw4fHxjbGVhbiUyMHByb2ZpbGUlMjBwb3J0cmFpdCUyMHBvcnRyYWl0fGVufDB8fHx8MTcwNzEzMzQ4OXww&ixlib=rb-4.0.3&q=80&w=200",
-  // },
-  // {
-  //   id: 9,
-  //   name: "Mia",
-  //   title: "Marketing",
-  //   image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY1NDl8MHwxfGFsbHw5fHxjbGVhbiUyMHByb2ZpbGUlMjBwb3J0cmFpdCUyMHBvcnRyYWl0fGVufDB8fHx8MTcwNzEzMzQ4OXww&ixlib=rb-4.0.3&q=80&w=200",
-  // },
-  // {
-  //   id: 10,
-  //   name: "Leo",
-  //   title: "Product",
-  //   image: "https://images.unsplash.com/photo-1522075469751-3a6694fa2a86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY1NDl8MHwxfGFsbHwxMHx8Y2xlYW4lMjBwcm9maWxlJTIwcG9ydHJhaXQlMjBwb3J0cmFpdHxlbnwwfHx8fDE3MDcxMzM0ODl8MA&ixlib=rb-4.0.3&q=80&w=200",
-  // },
+  { id: 1, name: "Matt Knell", title: "VP, Social Media", image: "/team1.jpg" },
+  { id: 2, name: "David J. Carr", title: "VP, Strategy", image: "/team2.jpg" },
+  { id: 3, name: "Kari Seerup", title: "Account Director", image: "/team3.jpg" },
+  { id: 4, name: "Ebony Grimsley", title: "Creative Director", image: "/team4.jpg" },
+  // ... more data
 ];
-// --- END: UPDATED teamData with working image URLs ---
-
-const TeamMember = ({ name, title, image }) => (
-  <div className="text-center">
-    <div className="relative aspect-square overflow-hidden rounded-md">
-      {/* Note: When using external URLs in Next.js Image component, you may need to
-          configure the `next.config.js` file with the domain(s) in `images: { domains: [...] }` */}
-      <Image src={image} alt={name} fill className="object-cover" />
-    </div>
-    <p className="mt-3 font-semibold text-white">{name}</p>
-    <p className="text-sm text-gray-400">{title}</p>
-  </div>
-);
 
 export default function AboutPage() {
   return (
-    <main className="bg-white text-black">
-      {/* HEADER */}
+    <main className="bg-black text-white">
       <Header />
 
-      {/* HERO */}
-      <section className="max-w-7xl mx-auto px-6 py-24 md:py-20 grid md:grid-cols-2 gap-16 items-center">
-        <div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Accelerated with impact and results
-          </h1>
-          <p className="text-gray-400 mb-8">
-            We are a collective of creators, strategists, and technologists
-            building digital products that matter.
-          </p>
-          <button className="bg-white text-black px-8 py-3 font-semibold rounded-full">
-            INSIGHT
-          </button>
-        </div>
-
-        <div className="relative h-[360px] rounded-xl overflow-hidden">
-          <Image
-            // --- UPDATED IMAGE URL ---
-            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY1NDl8MHwxfGFsbHwxfHxjdWx0dXJlJTIwb2ZmaWNlJTIwZGVza3N8ZW58MHx8fHwxNzA3MTMzNjcwfDA&ixlib=rb-4.0.3&q=80&w=1200"
-            alt="Team meeting"
-            fill
-            className="object-cover"
+      {/* HERO SECTION - White Background like the image */}
+      <section className="flex flex-col bg-white text-black pt-32 pb-20 gap-12 px-6">
+        <h1 className="text-6xl px-12 items-start">Obsessed with Impact <br /> and Results</h1>
+        <div className="mx-12 grid md:grid-cols-2 gap-12 items-start">
+          <video
+            src="/5c76ce4998ac6bcff7b7f60d_67ddd1d601f40f589cc3507b_about_hero_video_02-transcode.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            width={600}
+            height={400}
+            className="rounded-md"
           />
-        </div>
-      </section>
-
-      {/* ABOUT / STATS */}
-      <section className="py-32 overflow-hidden">
-        <h2 className="text-[4rem] md:text-[6rem] font-extralight text-gray-800 text-center uppercase mb-16">
-          About Us
-        </h2>
-
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 items-center">
-          <div className="flex justify-around">
-            <div className="text-center">
-              <p className="text-4xl font-bold">3</p>
-              <p className="text-gray-400 text-sm uppercase">Awards Won</p>
-            </div>
-            <div className="text-center">
-              <p className="text-4xl font-bold">20+</p>
-              <p className="text-gray-400 text-sm uppercase">Clients Served</p>
-            </div>
-          </div>
-
-          <div className="md:col-span-2 relative h-[300px] rounded-xl overflow-hidden">
-            <Image
-              // --- UPDATED IMAGE URL ---
-              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY1NDl8MHwxfGFsbHwxfHxjdWx0dXJlJTIwb2ZmaWNlJTIwZGVza3N8ZW58MHx8fHwxNzA3MTMzNjcwfDA&ixlib=rb-4.0.3&q=80&w=1200"
-              alt="Team collaboration"
-              fill
-              className="object-cover"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* APPROACH */}
-      <section className="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16">
-        <div>
-          <h3 className="text-3xl font-medium mb-4">
-            We know our approach is simple.
-          </h3>
-          <p className="text-gray-400">
-            Our method is iterative and human-centered, ensuring every product
-            resonates deeply with its users.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-3 gap-6">
-          {[
-            { num: "5", label: "Years Experience" },
-            { num: "13", label: "Active Projects" },
-            { num: "1", label: "Office Location" },
-          ].map((item) => (
-            <div key={item.label}>
-              <p className="text-3xl font-bold">{item.num}</p>
-              <p className="text-xs uppercase text-gray-400">{item.label}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* PEOPLE */}
-      <section className="py-32">
-        <h2 className="text-[4rem] md:text-[6rem] font-extralight text-gray-800 text-center uppercase">
-          People
-        </h2>
-        <p className="text-center text-lg text-white mb-16">
-          Driven by creativity. Focused on results.
-        </p>
-
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
-          {teamData.map((member) => (
-            <TeamMember key={member.id} {...member} />
-          ))}
-        </div>
-      </section>
-
-      {/* CULTURE */}
-      <section className="py-32 max-w-7xl mx-auto px-6 space-y-24">
-        <h2 className="text-[4rem] md:text-[6rem] font-extralight text-gray-800 text-center uppercase">
-          Culture
-        </h2>
-
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div>
-            <h3 className="text-3xl mb-4">Work smart, not hard.</h3>
-            <p className="text-gray-400">
-              We prioritize focus, efficiency, and autonomy over long hours.
+          <div className="flex flex-col justify-between space-y-6">
+            <p className="text-xl text-gray-600 max-w-md">
+              We are a collective of creators, strategists, and technologists 
+              building digital products that matter.
             </p>
-          </div>
-          <div className="relative h-[300px] rounded-xl overflow-hidden">
-            <Image
-              // --- UPDATED IMAGE URL ---
-              src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY1NDl8MHwxfGFsbHwxfHxjdWx0dXJlJTIwd29ya2luZyUyMHBhbm9yYW1hfGVufDB8fHx8MTcwNzEzMzY1NXww&ixlib=rb-4.0.3&q=80&w=1200"
-              alt="People collaborating"
-              fill
-              className="object-cover"
-            />
-          </div>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-12 items-center">
-          <div className="relative h-[260px] rounded-xl overflow-hidden">
-            <Image
-              // --- UPDATED IMAGE URL ---
-              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1NjY1NDl8MHwxfGFsbHwxfHxjdWx0dXJlJTIwb2ZmaWNlJTIwZGVza3N8ZW58MHx8fHwxNzA3MTMzNjcwfDA&ixlib=rb-4.0.3&q=80&w=1200"
-              alt="Clean office space"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <div className="md:col-span-2 grid sm:grid-cols-2 gap-12">
-            <div>
-              <h4 className="text-xl mb-3">Our vision</h4>
-              <p className="text-gray-400">
-                To exceed expectations and redefine digital excellence.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-xl mb-3">Our mission</h4>
-              <p className="text-gray-400">
-                Build scalable, human-first digital products.
-              </p>
+            <div className="flex items-center justify-center rounded-[5px] gap-4 bg-black w-[290px] h-[180px]">
+               <span className="font-black text-5xl uppercase text-white tracking-tighter italic">Insight</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FOOTER */}
+      {/* ABOUT US - Black Background */}
+      <section className="bg-black py-20">
+        <div className="w-full px-6">
+          <h1 className="relative text-white/30 text-5xl text-[22vw] text-center">About Us</h1>
+          
+          <div className="grid md:grid-cols-2 gap-16 -mt-10 items-center">
+            <div className="space-y-8">
+              <h3 className="text-4xl font-bold tracking-tight">We care deeply <br /> about outcome</h3>
+              <p className="text-gray-400 text-lg leading-relaxed">
+                Our approach is rooted in partnership, focusing on high-level strategy 
+                to ensure your digital products succeed in a crowded market.
+              </p>
+              <div className="flex gap-12 pt-4">
+                <div className="flex flex-col gap-5">
+                  <div className="text-8xl">07</div>
+                  <div className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-bold mt-2">Team Members</div>
+                </div>
+                <div className="flex flex-col gap-5">
+                  <div className="text-8xl">15</div>
+                  <div className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-bold mt-2">Projects Completed</div>
+                </div>
+              </div>
+            </div>
+            
+            {/* The signature "Utility" curved image */}
+            <div className="relative aspect-4/5 rounded-bl-[120px] overflow-hidden">
+               <Image 
+                src="https://images.unsplash.com/photo-1522071823992-b48e0dfb0ed2?auto=format&fit=crop&w=800" 
+                alt="Collaboration" 
+                fill 
+                className="object-cover grayscale" 
+               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PEOPLE - White Background */}
+      <section className="bg-white text-black py-24">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="mb-20">
+            <h2 className="text-[12vw] font-black uppercase tracking-tighter leading-none text-gray-100">People</h2>
+            <p className="text-2xl font-bold -mt-8 ml-2">Digital creators & strategists</p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-12">
+            {teamData.map((member) => (
+              <div key={member.id} className="group">
+                <div className="relative aspect-[4/5] bg-gray-100 overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500">
+                  <Image src={member.image} alt={member.name} fill className="object-cover" />
+                </div>
+                <div className="mt-4 border-l-2 border-transparent group-hover:border-black pl-3 transition-colors">
+                  <h4 className="font-bold text-lg leading-none uppercase tracking-tight">{member.name}</h4>
+                  <p className="text-xs text-gray-500 uppercase tracking-widest mt-1">{member.title}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* LOCATIONS */}
+      <section className="bg-black py-32 px-6">
+        <div className="max-w-7xl mx-auto">
+          <h3 className="text-sm font-bold uppercase tracking-[0.3em] text-gray-500 mb-12">Our Locations</h3>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div className="group cursor-pointer">
+              <div className="relative aspect-video overflow-hidden mb-6 grayscale group-hover:grayscale-0 transition-all">
+                <Image src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=800" alt="NYC" fill className="object-cover" />
+              </div>
+              <p className="text-xl font-bold uppercase tracking-tighter">New York City</p>
+              <p className="text-gray-500 text-sm">Headquarters</p>
+            </div>
+            <div className="group cursor-pointer">
+              <div className="relative aspect-video overflow-hidden mb-6 grayscale group-hover:grayscale-0 transition-all">
+                <Image src="https://images.unsplash.com/photo-1501139083538-0139583c060f?auto=format&fit=crop&w=800" alt="LA" fill className="object-cover" />
+              </div>
+              <p className="text-xl font-bold uppercase tracking-tighter">Los Angeles</p>
+              <p className="text-gray-500 text-sm">West Coast Office</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </main>
   );
